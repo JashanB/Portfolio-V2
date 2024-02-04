@@ -7,8 +7,14 @@
 
 }
 
-.modal-div {
+.modal-closed {
   display: none;
+}
+
+.modal-open {
+  display: block;
+  overflow-y: initial;
+  
 }
 
 .App div {

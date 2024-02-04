@@ -29,29 +29,15 @@
   align-items: flex-start;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.star-tail {
+.start-here {
   width: 50px;
   height: 50px;
+  /* animation: bounce 2s infinite; */
+  animation: pulse 2s infinite;
 }
 
-/* Define the keyframes for the animation */
-@keyframes change-border {
-  0% {
-    border-color: black;
-  }
-
-  50% {
-    border-color: red;
-  }
-
-  100% {
-    border-color: black;
-  }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }

@@ -14,15 +14,12 @@ function App() {
   }
   return (
     <div className="App">
-      <div className='top-div'>
+      <div className='body'>
+        <header>Jashan Brar</header>
         <div className='start-div'>
           <img src={start} className='start-here' alt="my-star"></img>
         </div>
       </div>
-      <div className='middle-div'>
-        <header>Jashan Brar</header>
-      </div>
-      <div></div>
       <div className="modal-div"></div>
     </div>
   );

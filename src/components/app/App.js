@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import  star from './star.jpeg';
+import start from './start.png';
 
 function App() {
 
@@ -15,8 +16,7 @@ function App() {
     <div className="App">
       <div className='top-div'>
         <div className='start-div'>
-          <header>Start here</header>
-          <img src={star} className='star-tail' alt="my-star"></img>
+          <img src={start} className='start-here' alt="my-star"></img>
         </div>
       </div>
       <div className='middle-div'>

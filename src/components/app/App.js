@@ -9,10 +9,11 @@ function App() {
   //2 things - animated start here button that once clicked, brings up modal with about me page
   //need modal component
   //need content to put in modal 
-
+  //Background - Skills - Companies/Role - Projects 
   function modalClick () {
     setModal(state => "modal-open");
   }
+
   return (
     <div className="App">
       <div className='body'>
@@ -21,7 +22,9 @@ function App() {
           <img src={start} className='start-here' alt="my-star" onClick={() => modalClick()}></img>
         </div>
       </div>
-      <div className={modal}></div>
+      <div className={modal}>
+        <div className='modal-body'></div>
+      </div>
     </div>
   );
 }

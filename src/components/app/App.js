@@ -3,6 +3,7 @@ import React from 'react';
 import star from './star.jpeg';
 import start from './start.png';
 import { useState } from 'react';
+import nav from "./nav";
 
 function App() {
   // const [modal, setModal] = useState("modal-closed")

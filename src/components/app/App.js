@@ -24,8 +24,31 @@ function App() {
             <p>I build efficient and scaleable digital experiences</p>
           </div>
           <nav className=''>
-
+            <ul>
+              <li>
+                <a href="">
+                  <span></span>
+                  <span></span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span></span>
+                  <span></span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span></span>
+                  <span></span>
+                </a>
+              </li>
+            </ul>
           </nav>
+          <ul className='external-links'>
+            <li><a href='https://github.com/jashanb'><svg></svg></a></li>
+            <li><a href='https://www.linkedin.com/in/jashan-brar/'><svg></svg></a></li>
+          </ul>
         </header>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import  star from './star.jpeg';
+import star from './star.jpeg';
 import start from './start.png';
 import { useState } from 'react';
 
@@ -10,23 +10,39 @@ function App() {
   //need modal component
   //need content to put in modal 
   //Background - Skills - Companies/Role - Projects 
-  function modalClick () {
+  function modalClick() {
     setModal(state => "modal-open");
   }
 
   return (
     <div className="App">
       <div className='body'>
-        <header>Jashan Brar</header>
-        <div className='start-div'>
-          <img src={start} className='start-here' alt="my-star" onClick={() => modalClick()}></img>
-        </div>
-      </div>
-      <div className={modal}>
-        <div className='modal-body'></div>
+        <header className='header'>
+          <div className='header-text'>
+            <h1>Jashan Brar</h1>
+            <h2>Full Stack Developer</h2>
+            <p>I build efficient and scaleable digital experiences</p>
+          </div>
+          <nav className=''>
+
+          </nav>
+        </header>
       </div>
     </div>
   );
+  // return (
+  //   <div className="App">
+  //     <div className='body'>
+  //       <header>Jashan Brar</header>
+  //       <div className='start-div'>
+  //         <img src={start} className='start-here' alt="my-star" onClick={() => modalClick()}></img>
+  //       </div>
+  //     </div>
+  //     <div className={modal}>
+  //       <div className='modal-body'></div>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default App;

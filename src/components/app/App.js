@@ -11,6 +11,16 @@ function App() {
   // const [hoveredNav, setHoveredNav] = useState(null);
   const [smallScreen, setSmallScreen] = useState(false);
   
+  useEffect(() => {
+    function handleResize () {
+      setSmallScreen(state => window.innerWidth >= 1024);
+    }
+    handleResize();
+    //add event listener when component mounts
+    window.addEventListener('resize', handleResize);
+     // Clean up event listener when the component unmounts
+     return () => window.removeEventListener('resize', handleResize);
+  }, [])
 
   return (
     <div className="App">

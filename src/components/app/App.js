@@ -39,6 +39,19 @@ function App() {
             <li><a href='https://www.linkedin.com/in/jashan-brar/'><svg></svg></a></li>
           </ul>
         </header>
+        <main className='content'>
+        <section id="about">
+          {/*only show div with media dimensions <1024 - opacity to 0*/}
+        <div>
+          <h2>About</h2>
+        </div>
+        <div>
+          <p>About para 1</p>
+          <p>About para 2</p>
+          <p>About para 3</p>
+        </div>
+        </section>
+        </main>
       </div>
     </div>
   );

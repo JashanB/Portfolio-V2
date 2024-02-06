@@ -3,6 +3,16 @@ import React from 'react';
 import './Nav.css';
 
 export default function Nav() {
+    const [hoveredNav, setHoveredNav] = useState(null);
+
+    function hoverNav(item) {
+        setHoveredNav(state => item);
+    }
+
+    function moveOffNav(item) {
+        setHoveredNav(state => null);
+    }
+
     return (
         <nav className=''>
             <ul>

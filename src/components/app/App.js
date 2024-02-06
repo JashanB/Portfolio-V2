@@ -2,26 +2,15 @@ import './App.css';
 import React from 'react';
 import star from './star.jpeg';
 import start from './start.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import nav from "./nav";
 import Nav from './nav';
 
 function App() {
-  // const [modal, setModal] = useState("modal-closed")
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
   // const [hoveredNav, setHoveredNav] = useState(null);
+  const [smallScreen, setSmallScreen] = useState(false);
   
-  // function modalClick() {
-  //   setModal(state => "modal-open");
-  // }
-
-  function hoverNav(item) {
-    setHoveredNav(state => item);
-  }
-
-  function moveOffNav(item) {
-    setHoveredNav(state => null);
-  }
 
   return (
     <div className="App">
@@ -42,7 +31,7 @@ function App() {
         <main className='content'>
         <section id="about">
           {/*only show div with media dimensions <1024 - opacity to 0*/}
-        <div>
+        <div >
           <h2>About</h2>
         </div>
         <div>

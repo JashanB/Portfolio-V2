@@ -5,7 +5,8 @@ import start from './start.png';
 import { useState } from 'react';
 
 function App() {
-  const [modal, setModal] = useState("modal-closed")
+  // const [modal, setModal] = useState("modal-closed")
+  const [navItemClass, setNavItemClass] = useState("nav-item-normal");
   //2 things - animated start here button that once clicked, brings up modal with about me page
   //need modal component
   //need content to put in modal 
@@ -23,24 +24,28 @@ function App() {
             <h2>Full Stack Developer</h2>
             <p>I build efficient and scaleable digital experiences</p>
           </div>
+          {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
           <nav className=''>
             <ul>
-              <li>
-                <a href="">
+              <li className={navItemClass} 
+              onMouseEnter={setNavItemClass(state => "nav-item-hovered")}
+              onMouseLeave={setNavItemClass(state => "nav-item-normal")}
+              >
+                <a href="" className='flex-nav-center'>
                   <span></span>
-                  <span></span>
+                  <span>About</span>
                 </a>
               </li>
               <li>
                 <a href="">
                   <span></span>
-                  <span></span>
+                  <span>Experience</span>
                 </a>
               </li>
               <li>
                 <a href="">
                   <span></span>
-                  <span></span>
+                  <span>Projects</span>
                 </a>
               </li>
             </ul>

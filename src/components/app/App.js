@@ -10,17 +10,17 @@ function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
   // const [hoveredNav, setHoveredNav] = useState(null);
   const [smallScreen, setSmallScreen] = useState(false);
-  
+
   useEffect(() => {
-    function handleResize () {
+    function handleResize() {
       setSmallScreen(state => window.innerWidth >= 1024);
     }
     handleResize();
     //add event listener when component mounts
     window.addEventListener('resize', handleResize);
-     // Clean up event listener when the component unmounts
-     return () => window.removeEventListener('resize', handleResize);
-  }, [])
+    // Clean up event listener when the component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div className="App">
@@ -32,24 +32,32 @@ function App() {
             <p>I build efficient and scaleable digital experiences</p>
           </div>
           {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
-          <Nav/>
+          <Nav />
           <ul className='external-links'>
             <li><a href='https://github.com/jashanb'><svg></svg></a></li>
             <li><a href='https://www.linkedin.com/in/jashan-brar/'><svg></svg></a></li>
           </ul>
         </header>
         <main className='content'>
-        <section id="about">
-          {/*only show div with media dimensions <1024 - opacity to 0*/}
-        <div >
-          <h2>About</h2>
-        </div>
-        <div>
-          <p>About para 1</p>
-          <p>About para 2</p>
-          <p>About para 3</p>
-        </div>
-        </section>
+          <section id="about">
+            {/*only show div with media dimensions <1024 - opacity to 0*/}
+            <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <h2>About</h2>
+            </div>
+            <div>
+              <p>About para 1</p>
+              <p>About para 2</p>
+              <p>About para 3</p>
+            </div>
+          </section>
+          <section id="experience">
+            <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <h2>Experience</h2>
+            </div>
+            <ol className=''>
+              <li></li>
+            </ol>
+          </section>
         </main>
       </div>
     </div>

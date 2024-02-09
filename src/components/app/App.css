@@ -136,3 +136,7 @@
   display: flex;
   align-items: center;
 }
+
+.resume {
+  margin-top: 3rem;
+}

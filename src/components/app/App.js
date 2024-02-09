@@ -91,6 +91,15 @@ function App() {
                   </div>
                 </li>
               </ol>
+              <div className='resume'>
+                <a href=""><span>View Full Resume</span></a>
+              </div>
+            </div>
+          </section>
+          <section id="projects">
+            {/*only show div with media dimensions <1024 - opacity to 0*/}
+            <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <h2>Projects</h2>
             </div>
           </section>
         </main>

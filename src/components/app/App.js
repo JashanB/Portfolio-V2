@@ -63,9 +63,29 @@ function App() {
                     <header className='date-list-item'>2020-2021</header>
                     <div className='list-item-main'>
                       <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
-                      <p>Experience at TBN</p>
+                      <p>Experience at TBN description</p>
                       <ul className='tech-stack-flex-box'>
-
+                        <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
+                        <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
+                        <li className='tech-item'><div className="tech-item-div">React</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    {/*Around list item, greater than dimensions, show on hover*/}
+                    <div className='absolute-inset'></div>
+                    <header className='date-list-item'>2019-2020</header>
+                    <div className='list-item-main'>
+                      <h3 className='list-item-header'><span>Jr Software Engineer &#183; CarltonOne Engagement</span></h3>
+                      <p>Experience at CarltonOne description</p>
+                      <ul className='tech-stack-flex-box'>
+                        <li className='tech-item'><div className="tech-item-div">Python</div></li>
+                        <li className='tech-item'><div className="tech-item-div">SQL Management Server</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Navicat GUI</div></li>
                       </ul>
                     </div>
                   </div>

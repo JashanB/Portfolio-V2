@@ -54,9 +54,13 @@ function App() {
             <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
               <h2>Experience</h2>
             </div>
-            <ol className=''>
-              <li></li>
-            </ol>
+            <div className='experience-container'>
+              <ol className='group/list'>
+                <li className='list-item'>
+
+                </li>
+              </ol>
+            </div>
           </section>
         </main>
       </div>

@@ -57,7 +57,16 @@ function App() {
             <div className='experience-container'>
               <ol className='group/list'>
                 <li className='list-item'>
-
+                  <div className='list-item-grid'>
+                    {/*Around list item, greater than dimensions, show on hover*/}
+                    <div className='absolute-inset'></div>
+                    <header className='date-list-item'>2020-2021</header>
+                    <div className='list-item-main'>
+                      <h3 className='list-item-header'>
+                        <span>Full Stack Developer &#183; Twenty Billion Neurons</span>
+                      </h3>
+                    </div>
+                  </div>
                 </li>
               </ol>
             </div>

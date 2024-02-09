@@ -16,6 +16,7 @@
   overflow-y: initial;
 
 }
+
 .modal-body {
   height: 80vh;
 }
@@ -46,14 +47,25 @@
   animation: pulse-hover 0.1s ease-out forwards;
   filter: brightness(0.7);
 }
+
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes pulse-hover {
-  to { transform: scale(1.08); }
+  to {
+    transform: scale(1.08);
+  }
 }
 
 .list-item {
@@ -61,7 +73,28 @@
 
 }
 
-.list-item :after, :before {
+.list-item :after,
+:before {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
+}
+
+.list-item-grid {
+  display: grid;
+  position: relative;
+  padding-bottom: 0.25rem;
+
+}
+
+@media (min-width: 640px) {
+  .list-item-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-item-grid .md\:gap-4 {
+    gap: 1rem;
+  }
 }

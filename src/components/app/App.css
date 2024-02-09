@@ -114,3 +114,25 @@
 
   }
 }
+
+.tech-stack-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tech-item-div {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212/var(--tw-text-opacity));
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: .75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgba(45,212,191,.1);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+}

@@ -62,9 +62,11 @@ function App() {
                     <div className='absolute-inset'></div>
                     <header className='date-list-item'>2020-2021</header>
                     <div className='list-item-main'>
-                      <h3 className='list-item-header'>
-                        <span>Full Stack Developer &#183; Twenty Billion Neurons</span>
-                      </h3>
+                      <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
+                      <p>Experience at TBN</p>
+                      <ul className='tech-stack-flex-box'>
+
+                      </ul>
                     </div>
                   </div>
                 </li>

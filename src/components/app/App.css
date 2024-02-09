@@ -55,3 +55,13 @@
 @keyframes pulse-hover {
   to { transform: scale(1.08); }
 }
+
+.list-item {
+  margin-bottom: 3rem;
+
+}
+
+.list-item :after, :before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}

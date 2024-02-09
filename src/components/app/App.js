@@ -70,6 +70,8 @@ function App() {
                         <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
                         <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
                         <li className='tech-item'><div className="tech-item-div">React</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Cloud</div></li>
+                        <li className='tech-item'><div className="tech-item-div">AWS</div></li>
                       </ul>
                     </div>
                   </div>
@@ -100,6 +102,14 @@ function App() {
             {/*only show div with media dimensions <1024 - opacity to 0*/}
             <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
               <h2>Projects</h2>
+            </div>
+            <div>
+              <ul className='group/list'>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                  </div>
+                </li>
+              </ul>
             </div>
           </section>
         </main>

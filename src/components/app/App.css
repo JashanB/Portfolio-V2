@@ -98,3 +98,19 @@
     gap: 1rem;
   }
 }
+
+.absolute-inset {
+  position: absolute;
+  border-radius: 0.375rem;
+  top: -1rem;
+  bottom: -1rem;
+}
+
+@media (min-width: 1024px) {
+  .absolute-inset {
+    left: -1.5rem;
+    right: -1.5rem;
+    display: block;
+
+  }
+}

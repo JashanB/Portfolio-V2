@@ -139,6 +139,42 @@ function App() {
                     </div>
                   </div>
                 </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                    <h3 className='list-item-header'><span>Weather App</span></h3>
+                      <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons. WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage and reduced API calls.</p>
+                      <ul className='tech-stack-flex-box'>
+                        <li className='tech-item'><div className="tech-item-div">React</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
+                        <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Maps JS</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Dark Sky API</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Canvas.js</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                    <h3 className='list-item-header'><span>Newton</span></h3>
+                      <p>Pinterest-like app for learners. Express web app that allows learners to save learning resources like tutorials, blogs and videos
+                         in a central place that is publicly available to any user. Search community resources or topics, comment on and rate resources,
+                          or upload your own! User signup and authentication is fully supported through cookies.</p>
+                      <ul className='tech-stack-flex-box'>
+                        <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Express</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Node.js</div></li>
+                        <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Material UI</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Styled Components</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>

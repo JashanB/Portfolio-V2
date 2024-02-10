@@ -107,6 +107,36 @@ function App() {
               <ul className='group/list'>
                 <li className='list-item'>
                   <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                    <h3 className='list-item-header'><span>Social Site</span></h3>
+                      <p>Instagram clone describe more</p>
+                      <ul className='tech-stack-flex-box'>
+                        <li className='tech-item'><div className="tech-item-div">React</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Node.js</div></li>
+                        <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
+                        <li className='tech-item'><div className="tech-item-div">RESTful API</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                    <h3 className='list-item-header'><span>Bettr Trip</span></h3>
+                      <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
+                      <ul className='tech-stack-flex-box'>
+                        <li className='tech-item'><div className="tech-item-div">React</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
+                        <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Maps JS</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Directions Services</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Distance Matrix</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Google Places</div></li>
+                        <li className='tech-item'><div className="tech-item-div">Dark Sky API</div></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
               </ul>

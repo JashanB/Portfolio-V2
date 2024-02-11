@@ -4,21 +4,22 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center; */
-  --font-inter: "__inter_20b187","__inter_Fallback_20b187";
+  --font-inter: "__inter_20b187", "__inter_Fallback_20b187";
   position: relative;
   display: block;
 }
 
 .app-insert {
-  background: radial-gradient( 600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80% );
+  background: radial-gradient(600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%);
   transition-duration: .3s;
   z-index: 30;
   inset: 0;
   position: absolute;
   pointer-events: none;
   display: block;
-  
+
 }
+
 .modal-closed {
   display: none;
 }
@@ -37,13 +38,66 @@
   width: 100%
 }
 
-/* .body {
+/* 
+.div-body {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
 } */
+
+.div-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* 1024 MEDIA */
+@media (min-width: 1024px) {
+  .div-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .absolute-inset {
+    left: -1.5rem;
+    right: -1.5rem;
+    display: block;
+
+  }
+}
+
+/* 640 MEDIA */
+
+@media (min-width: 640px) {
+  .list-item-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* 768 MEDIA */
+
+@media (min-width: 768px) {
+  .list-item-grid .md\:gap-4 {
+    gap: 1rem;
+  }
+  .div-body {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 
 .start-here {
   width: 50px;
@@ -98,33 +152,11 @@
 
 }
 
-@media (min-width: 640px) {
-  .list-item-grid {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .list-item-grid .md\:gap-4 {
-    gap: 1rem;
-  }
-}
-
 .absolute-inset {
   position: absolute;
   border-radius: 0.375rem;
   top: -1rem;
   bottom: -1rem;
-}
-
-@media (min-width: 1024px) {
-  .absolute-inset {
-    left: -1.5rem;
-    right: -1.5rem;
-    display: block;
-
-  }
 }
 
 .tech-stack-flex-box {
@@ -143,7 +175,7 @@
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  background-color: rgba(45,212,191,.1);
+  background-color: rgba(45, 212, 191, .1);
   border-radius: 9999px;
   display: flex;
   align-items: center;

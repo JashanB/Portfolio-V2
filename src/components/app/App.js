@@ -109,7 +109,7 @@ function App() {
                   <div className='list-item-grid'>
                     <div className='absolute-inset'></div>
                     <div className='list-item-main'>
-                    <h3 className='list-item-header'><span>Social Site</span></h3>
+                      <h3 className='list-item-header'><span>Social Site</span></h3>
                       <p>Instagram clone describe more</p>
                       <ul className='tech-stack-flex-box'>
                         <li className='tech-item'><div className="tech-item-div">React</div></li>
@@ -124,7 +124,7 @@ function App() {
                   <div className='list-item-grid'>
                     <div className='absolute-inset'></div>
                     <div className='list-item-main'>
-                    <h3 className='list-item-header'><span>Bettr Trip</span></h3>
+                      <h3 className='list-item-header'><span>Bettr Trip</span></h3>
                       <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
                       <ul className='tech-stack-flex-box'>
                         <li className='tech-item'><div className="tech-item-div">React</div></li>
@@ -143,7 +143,7 @@ function App() {
                   <div className='list-item-grid'>
                     <div className='absolute-inset'></div>
                     <div className='list-item-main'>
-                    <h3 className='list-item-header'><span>Weather App</span></h3>
+                      <h3 className='list-item-header'><span>Weather App</span></h3>
                       <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons. WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage and reduced API calls.</p>
                       <ul className='tech-stack-flex-box'>
                         <li className='tech-item'><div className="tech-item-div">React</div></li>
@@ -160,10 +160,10 @@ function App() {
                   <div className='list-item-grid'>
                     <div className='absolute-inset'></div>
                     <div className='list-item-main'>
-                    <h3 className='list-item-header'><span>Newton</span></h3>
+                      <h3 className='list-item-header'><span>Newton</span></h3>
                       <p>Pinterest-like app for learners. Express web app that allows learners to save learning resources like tutorials, blogs and videos
-                         in a central place that is publicly available to any user. Search community resources or topics, comment on and rate resources,
-                          or upload your own! User signup and authentication is fully supported through cookies.</p>
+                        in a central place that is publicly available to any user. Search community resources or topics, comment on and rate resources,
+                        or upload your own! User signup and authentication is fully supported through cookies.</p>
                       <ul className='tech-stack-flex-box'>
                         <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
                         <li className='tech-item'><div className="tech-item-div">Express</div></li>
@@ -189,18 +189,40 @@ function App() {
                   <div className='list-item-grid'>
                     <div className='absolute-inset'></div>
                     <div className='list-item-main'>
-                    <h3 className='list-item-header'><span>Social Site</span></h3>
-                      <p>Instagram clone describe more</p>
-                      <ul className='tech-stack-flex-box'>
-                        <li className='tech-item'><div className="tech-item-div">React</div></li>
-                        <li className='tech-item'><div className="tech-item-div">Node.js</div></li>
-                        <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
-                        <li className='tech-item'><div className="tech-item-div">RESTful API</div></li>
-                      </ul>
+                      <h3 className='list-item-header'><span>Dalhousie Research Day (2023)</span></h3>
+                      <p>Assessing Burnout in Medical Learners</p>
                     </div>
                   </div>
                 </li>
-          
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                      <h3 className='list-item-header'><span>International Journal of Stroke (2016)</span></h3>
+                      <p>Technological Trends in Stroke Rehabilitation for Motor Function Recovery (Vol 11 Pg 68-68).</p>
+                    </div>
+                  </div>
+                </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                      <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                      <h3 className='list-item-header'><span>Archives of Physical Medicine and Rehabilitation (2016)</span></h3>
+                      <p>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review.</p>
+                    </div>
+                  </div>
+                </li>
+                <li className='list-item'>
+                  <div className='list-item-grid'>
+                    <div className='absolute-inset'></div>
+                    <div className='list-item-main'>
+                      <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                      <h3 className='list-item-header'><span>Archives of Physical Medicine and Rehabilitation (2016)</span></h3>
+                      <p>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review.</p>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>

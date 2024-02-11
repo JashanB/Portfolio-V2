@@ -1,9 +1,6 @@
 import './App.css';
 import React from 'react';
-import star from './star.jpeg';
-import start from './start.png';
 import { useState, useEffect } from 'react';
-import nav from "./nav";
 import Nav from './nav';
 
 function App() {

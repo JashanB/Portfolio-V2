@@ -1,19 +1,14 @@
 .App {
-  text-align: center;
+  /* text-align: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184/var(--tw-text-opacity));
-  line-height: 1.625;
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42/var(--tw-bg-opacity));
-}
-.body {
+  justify-content: center; */
+  --font-inter: "__inter_20b187","__inter_Fallback_20b187";
+  position: relative;
   display: block;
-
 }
+
 .modal-closed {
   display: none;
 }
@@ -32,13 +27,13 @@
   width: 100%
 }
 
-.body {
+/* .body {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-}
+} */
 
 .start-here {
   width: 50px;

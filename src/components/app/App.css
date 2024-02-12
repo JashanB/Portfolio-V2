@@ -47,7 +47,7 @@
     font-feature-settings: "ss03","cv02","cv11";
 }
 
-.body {
+.header {
 
 }
 /* 640 MEDIA */
@@ -94,6 +94,17 @@
     display: flex;
     justify-content: space-between;
 
+  }
+  .header {
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100vh;
+    top: 0;
+    position: sticky;
   }
 }
 .list-item {

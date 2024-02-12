@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
-      <div className='app-insert'></div>
+      {/* <div className='app-insert'></div> */}
       <div className='container'>
         <div className='body'>
           <header className='header'>

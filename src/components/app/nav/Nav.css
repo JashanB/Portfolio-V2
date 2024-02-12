@@ -36,3 +36,29 @@
 .hovered-nav-item {
     
 }
+
+.flex-nav-center {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav-line-elongate {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.nav-line-normal {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105/var(--tw-bg-opacity));
+    width: 2rem;
+    height: 1px;
+    margin-right: 1rem;
+}

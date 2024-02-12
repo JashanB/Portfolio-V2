@@ -6,10 +6,12 @@ export default function Nav(props) {
     const [hoveredNav, setHoveredNav] = useState(null);
 
     function hoverNav(item) {
+        console.log('entered', item)
         setHoveredNav(state => item);
     }
 
     function moveOffNav(item) {
+        console.log('exited', item)
         setHoveredNav(state => null);
     }
 
@@ -21,7 +23,7 @@ export default function Nav(props) {
                     onMouseLeave={() => moveOffNav(1)}
                 >
                     <a href="" className='flex-nav-center'>
-                        <span></span>
+                        <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span>About</span>
                     </a>
                 </li>

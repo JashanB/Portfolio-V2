@@ -43,25 +43,13 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-feature-settings: "ss03","cv02","cv11";
 }
 
-/* 1024 MEDIA */
-@media (min-width: 1024px) {
-  .container {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
+.body {
 
-  .absolute-inset {
-    left: -1.5rem;
-    right: -1.5rem;
-    display: block;
-
-  }
 }
-
 /* 640 MEDIA */
 
 @media (min-width: 640px) {
@@ -85,6 +73,29 @@
   }
 }
 
+/* 1024 MEDIA */
+@media (min-width: 1024px) {
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .absolute-inset {
+    left: -1.5rem;
+    right: -1.5rem;
+    display: block;
+
+  }
+
+  .body {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
 .list-item {
   margin-bottom: 3rem;
 

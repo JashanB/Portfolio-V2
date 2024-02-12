@@ -15,7 +15,7 @@ export default function Nav(props) {
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
-            <ul>
+            <ul className='nav-ul'>
                 <li className={hoveredNav === 1 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(1)}
                     onMouseLeave={() => moveOffNav(1)}
@@ -29,7 +29,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav(2)}
                     onMouseLeave={() => moveOffNav(2)}
                 >
-                    <a href="">
+                    <a href="" className='flex-nav-center'>
                         <span></span>
                         <span>Experience</span>
                     </a>
@@ -38,7 +38,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav(3)}
                     onMouseLeave={() => moveOffNav(3)}
                 >
-                    <a href="">
+                    <a href="" className='flex-nav-center'>
                         <span></span>
                         <span>Projects</span>
                     </a>

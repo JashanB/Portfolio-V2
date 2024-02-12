@@ -1,3 +1,38 @@
 .nav-hidden {
     display: none;
 }
+
+.nav-open {
+    display: block;
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    line-height: 1.625;
+    --tw-bg-opacity: 1;
+    margin: 0;
+}
+
+.nav-ul {
+    width: max-content;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.nav-ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.nav-item-normal {
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+}
+
+.hovered-nav-item {
+    
+}

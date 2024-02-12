@@ -24,7 +24,7 @@ export default function Nav(props) {
                 >
                     <a href="" className='flex-nav-center'>
                         <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
-                        <span>About</span>
+                        <span className={hoveredNav === 1 ? "nav-text-elongate" : "nav-text-normal"}>About</span>
                     </a>
                 </li>
                 <li className={hoveredNav === 2 ? "hovered-nav-item" : "nav-item-normal"}
@@ -32,8 +32,8 @@ export default function Nav(props) {
                     onMouseLeave={() => moveOffNav(2)}
                 >
                     <a href="" className='flex-nav-center'>
-                        <span></span>
-                        <span>Experience</span>
+                        <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
+                        <span className={hoveredNav === 1 ? "nav-text-elongate" : "nav-text-normal"}>Experience</span>
                     </a>
                 </li>
                 <li className={hoveredNav === 3 ? "hovered-nav-item" : "nav-item-normal"}
@@ -41,8 +41,8 @@ export default function Nav(props) {
                     onMouseLeave={() => moveOffNav(3)}
                 >
                     <a href="" className='flex-nav-center'>
-                        <span></span>
-                        <span>Projects</span>
+                        <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
+                        <span className={hoveredNav === 1 ? "nav-text-elongate" : "nav-text-normal"}>Projects</span>
                     </a>
                 </li>
             </ul>

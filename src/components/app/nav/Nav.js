@@ -14,7 +14,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className=''>
+        <nav className={props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul>
                 <li className={hoveredNav === 1 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(1)}

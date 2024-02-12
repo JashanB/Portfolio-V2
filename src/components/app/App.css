@@ -76,8 +76,16 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px; */
 }
-/* 640 MEDIA */
 
+.header-text p {
+  line-height: 1.5;
+  max-width: 20rem;
+  margin: 1rem 0 0 0;
+  --tw-text-opacity: 1;
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    display:  block;
+}
+/* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {
     grid-template-columns: repeat(8, minmax(0, 1fr));

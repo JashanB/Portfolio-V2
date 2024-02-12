@@ -30,9 +30,9 @@ function App() {
               <h1>Jashan Brar</h1>
               <h2>Full Stack Developer</h2>
               <p>I build efficient and scaleable digital experiences</p>
+              {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
+              <Nav smallScreen={smallScreen}/>
             </div>
-            {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
-            <Nav />
             <ul className='external-links'>
               <li><a href='https://github.com/jashanb'><svg></svg></a></li>
               <li><a href='https://www.linkedin.com/in/jashan-brar/'><svg></svg></a></li>

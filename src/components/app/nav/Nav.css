@@ -69,7 +69,13 @@
 }
 
 .nav-text-elongate {
-
+    --tw-text-opacity: 1;
+    color: rgb(226 232 240/var(--tw-text-opacity));
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
 }
 
 .nav-text-normal {

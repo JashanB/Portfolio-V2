@@ -24,7 +24,7 @@ function App() {
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
       <div className='app-insert'></div>
       <div className='container'>
-        <div className='div-body'>
+        <div className='body'>
           <header className='header'>
             <div className='header-text'>
               <h1>Jashan Brar</h1>

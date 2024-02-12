@@ -2,7 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 import './Nav.css';
 
-export default function Nav() {
+export default function Nav(props) {
     const [hoveredNav, setHoveredNav] = useState(null);
 
     function hoverNav(item) {
@@ -14,7 +14,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className={props.smallScreen ? "nav-hidden" : "nav-open"}>
+        <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul>
                 <li className={hoveredNav === 1 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(1)}

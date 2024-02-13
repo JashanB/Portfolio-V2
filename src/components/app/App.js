@@ -55,7 +55,7 @@ function App() {
           </header>
           <main className='content'>
             <section id="about">
-              <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>About</h2>
               </div>
               <div>
@@ -65,7 +65,7 @@ function App() {
               </div>
             </section>
             <section id="experience">
-              <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Experience</h2>
               </div>
               <div className='experience-container'>
@@ -114,7 +114,7 @@ function App() {
             </section>
             <section id="projects">
               {/*only show div with media dimensions <1024 - opacity to 0*/}
-              <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Projects</h2>
               </div>
               <div>
@@ -194,7 +194,7 @@ function App() {
             </section>
             <section id="publications">
               {/*only show div with media dimensions <1024 - opacity to 0*/}
-              <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
+              <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Publications</h2>
               </div>
               <div>

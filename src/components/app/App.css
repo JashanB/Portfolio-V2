@@ -150,6 +150,19 @@
   margin-bottom: 4rem;
 }
 
+.content-div-hidden {
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  top: auto;
+  position: relative;
+}
+
 /* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {
@@ -234,6 +247,7 @@
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;
   }
+
 }
 
 .list-item {

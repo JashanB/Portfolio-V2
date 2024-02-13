@@ -8,6 +8,7 @@
   --font-inter: "__inter_20b187", "__inter_Fallback_20b187";
   position: relative;
   display: block;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .app-insert {
@@ -178,6 +179,18 @@
   position: sticky;
 }
 
+.content-div-visible h2 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240/var(--tw-text-opacity));
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  display: block;
+  --tw-bg-opacity: 1;
+}
 /* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {

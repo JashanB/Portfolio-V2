@@ -44,12 +44,17 @@ function App() {
                   </foreignObject>
                 </svg>
               </a></li>
-              <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span><svg></svg></a></li>
+              <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <foreignObject  width="24" height="24">
+                    <img src={linkedin} alt="Image" width="100%" height="100%" />
+                  </foreignObject>
+                </svg>
+              </a></li>
             </ul>
           </header>
           <main className='content'>
             <section id="about">
-              {/*only show div with media dimensions <1024 - opacity to 0*/}
               <div className={smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>About</h2>
               </div>

@@ -19,6 +19,7 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  //add when screen is at section, trigger on hover for that nav part
   return (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
@@ -34,8 +35,8 @@ function App() {
               <Nav smallScreen={smallScreen}/>
             </div>
             <ul className='external-links'>
-              <li><a href='https://github.com/jashanb'><svg></svg></a></li>
-              <li><a href='https://www.linkedin.com/in/jashan-brar/'><svg></svg></a></li>
+              <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span><svg></svg></a></li>
+              <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span><svg></svg></a></li>
             </ul>
           </header>
           <main className='content'>

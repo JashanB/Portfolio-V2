@@ -14,7 +14,7 @@ export default function Nav(props) {
         console.log('exited', item)
         setHoveredNav(state => null);
     }
-
+    
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>

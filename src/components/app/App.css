@@ -121,7 +121,7 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
@@ -137,6 +137,17 @@
   padding-top: 6rem;
   display: block;
 
+}
+
+.content section {
+  scroll-margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: block;
+  line-height: 1.625;
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184/var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  margin-bottom: 4rem;
 }
 
 /* 640 MEDIA */
@@ -170,6 +181,11 @@
     padding-bottom: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .content section {
+    margin-bottom: 6rem;
+
   }
 }
 
@@ -207,11 +223,16 @@
     top: 0;
     position: sticky;
   }
+
   .content {
     padding-top: 6rem;
     width: 50%;
-
     padding-bottom: 6rem;
+  }
+
+  .content section {
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
   }
 }
 

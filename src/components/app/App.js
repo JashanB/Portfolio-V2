@@ -34,10 +34,16 @@ function App() {
               <h2>Full Stack Developer</h2>
               <p>I build efficient and scaleable digital experiences</p>
               {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
-              <Nav smallScreen={smallScreen}/>
+              <Nav smallScreen={smallScreen} />
             </div>
             <ul className='external-links'>
-              <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span><svg></svg></a></li>
+              <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <foreignObject  width="24" height="24">
+                    <img src={github} alt="Image" width="100%" height="100%" />
+                  </foreignObject>
+                </svg>
+              </a></li>
               <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span><svg></svg></a></li>
             </ul>
           </header>

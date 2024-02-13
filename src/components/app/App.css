@@ -126,6 +126,12 @@
   border-width: 0;
 }
 
+.external-links-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  vertical-align: middle;
+}
 /* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {

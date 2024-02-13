@@ -132,6 +132,13 @@
   display: block;
   vertical-align: middle;
 }
+
+.content {
+  padding-top: 6rem;
+  display: block;
+
+}
+
 /* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {
@@ -199,6 +206,12 @@
     max-height: 100vh;
     top: 0;
     position: sticky;
+  }
+  .content {
+    padding-top: 6rem;
+    width: 50%;
+
+    padding-bottom: 6rem;
   }
 }
 

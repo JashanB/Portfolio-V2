@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Nav from './nav';
+import github from './github.png';
+import linkedin from './linkedin.png';
 
 function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");

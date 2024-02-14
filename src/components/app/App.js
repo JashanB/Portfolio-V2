@@ -39,14 +39,14 @@ function App() {
             <ul className='external-links'>
               <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                  <foreignObject  width="24" height="24">
+                  <foreignObject width="24" height="24">
                     <img src={github} alt="Image" width="100%" height="100%" />
                   </foreignObject>
                 </svg>
               </a></li>
               <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                  <foreignObject  width="24" height="24">
+                  <foreignObject width="24" height="24">
                     <img src={linkedin} alt="Image" width="100%" height="100%" />
                   </foreignObject>
                 </svg>
@@ -68,47 +68,49 @@ function App() {
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Experience</h2>
               </div>
-              <div className='experience-container'>
-                <ol className='group-list'>
-                  <li className='list-item'>
-                    <div className='list-item-grid'>
-                      {/*Around list item, greater than dimensions, show on hover*/}
-                      <div className='absolute-inset'></div>
-                      <header className='date-list-item'>2020-2021</header>
-                      <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
-                        <p>Experience at TBN description</p>
-                        <ul className='tech-stack-flex-box'>
-                          <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
-                          <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
-                          <li className='tech-item'><div className="tech-item-div">React</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Google Cloud</div></li>
-                          <li className='tech-item'><div className="tech-item-div">AWS</div></li>
-                        </ul>
+              <div>
+                <div className='experience-container'>
+                  <ol className='group-list'>
+                    <li className='list-item'>
+                      <div className='list-item-grid'>
+                        {/*Around list item, greater than dimensions, show on hover*/}
+                        <div className='absolute-inset'></div>
+                        <header className='date-list-item'>2020-2021</header>
+                        <div className='list-item-main'>
+                          <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
+                          <p>Experience at TBN description</p>
+                          <ul className='tech-stack-flex-box'>
+                            <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
+                            <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
+                            <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
+                            <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
+                            <li className='tech-item'><div className="tech-item-div">React</div></li>
+                            <li className='tech-item'><div className="tech-item-div">Google Cloud</div></li>
+                            <li className='tech-item'><div className="tech-item-div">AWS</div></li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className='list-item'>
-                    <div className='list-item-grid'>
-                      {/*Around list item, greater than dimensions, show on hover*/}
-                      <div className='absolute-inset'></div>
-                      <header className='date-list-item'>2019-2020</header>
-                      <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Jr Software Engineer &#183; CarltonOne Engagement</span></h3>
-                        <p>Experience at CarltonOne description</p>
-                        <ul className='tech-stack-flex-box'>
-                          <li className='tech-item'><div className="tech-item-div">Python</div></li>
-                          <li className='tech-item'><div className="tech-item-div">SQL Management Server</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Navicat GUI</div></li>
-                        </ul>
+                    </li>
+                    <li className='list-item'>
+                      <div className='list-item-grid'>
+                        {/*Around list item, greater than dimensions, show on hover*/}
+                        <div className='absolute-inset'></div>
+                        <header className='date-list-item'>2019-2020</header>
+                        <div className='list-item-main'>
+                          <h3 className='list-item-header'><span>Jr Software Engineer &#183; CarltonOne Engagement</span></h3>
+                          <p>Experience at CarltonOne description</p>
+                          <ul className='tech-stack-flex-box'>
+                            <li className='tech-item'><div className="tech-item-div">Python</div></li>
+                            <li className='tech-item'><div className="tech-item-div">SQL Management Server</div></li>
+                            <li className='tech-item'><div className="tech-item-div">Navicat GUI</div></li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                </ol>
-                <div className='resume'>
-                  <a href=""><span>View Full Resume</span></a>
+                    </li>
+                  </ol>
+                  <div className='resume'>
+                    <a href=""><span>View Full Resume</span></a>
+                  </div>
                 </div>
               </div>
             </section>

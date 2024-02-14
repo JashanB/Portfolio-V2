@@ -69,7 +69,7 @@ function App() {
                 <h2>Experience</h2>
               </div>
               <div className='experience-container'>
-                <ol className='group/list'>
+                <ol className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       {/*Around list item, greater than dimensions, show on hover*/}
@@ -118,7 +118,7 @@ function App() {
                 <h2>Projects</h2>
               </div>
               <div>
-                <ul className='group/list'>
+                <ul className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className='absolute-inset'></div>
@@ -198,7 +198,7 @@ function App() {
                 <h2>Publications</h2>
               </div>
               <div>
-                <ul className='group/list'>
+                <ul className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className='absolute-inset'></div>

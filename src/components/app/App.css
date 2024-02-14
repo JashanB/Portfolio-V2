@@ -192,14 +192,24 @@
   --tw-bg-opacity: 1;
 }
 
+.experience-container {
+  display: grid;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
 .group-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
   display: block;
-  list-style-type: decimal;
   --tw-text-opacity: 1;
   color: rgb(148 163 184/var(--tw-text-opacity));
   line-height: 1.625;
@@ -246,6 +256,11 @@
     line-height: 1.75rem;
   }
 
+  .experience-container {
+    gap: 2rem;
+    grid-template-columns: repeat(8,minmax(0,1fr));
+  }
+
 }
 
 /* 768 MEDIA */
@@ -272,6 +287,11 @@
     padding-right: 3rem;
     margin-left: -3rem;
     margin-right: -3rem;
+  }
+
+  .experience-container {
+    gap: 1rem;
+
   }
 }
 

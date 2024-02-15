@@ -1,10 +1,5 @@
 /* APP CONTAINER STYLING */
 .App {
-  /* text-align: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center; */
   --font-inter: "__inter_20b187", "__inter_Fallback_20b187";
   position: relative;
   display: block;
@@ -21,20 +16,6 @@
   display: block;
 
 }
-
-/* .App div {
-  width: 100%
-} */
-
-/* 
-.div-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-} */
-
 .container {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -74,10 +55,6 @@
   display: block;
   font-size: 1.5em;
   margin-bottom: 0;
-  /* margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px; */
 }
 
 .header-text p {
@@ -192,15 +169,6 @@
   --tw-bg-opacity: 1;
 }
 
-/* .experience-container {
-  display: grid;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
-  padding-bottom: 0.25rem;
-  position: relative;
-} */
-
 .group-list {
   list-style: none;
   margin: 0;
@@ -277,6 +245,7 @@
 }
 
 /* 640 MEDIA */
+
 @media (min-width: 640px) {
   .list-item-grid {
     grid-template-columns: repeat(8, minmax(0, 1fr));
@@ -339,6 +308,7 @@
 }
 
 /* 1024 MEDIA */
+
 @media (min-width: 1024px) {
   .container {
     padding-top: 0;

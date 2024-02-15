@@ -112,11 +112,11 @@ function App() {
                   </li>
                 </ol>
                 <div className='resume-div'>
-                  <a className="resume-link" href=""><span className='resume-span-1'>View Full
+                  <a className="resume-link" href=""><span className='resume-span-1'>View Full&nbsp;
                     <span className='resume-span-2'>
-                      Resume<
-                        svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                        <foreignObject width="16" height="16">
+                      Resume
+                      <svg xmlns="http://www.w3.org/2000/svg">
+                        <foreignObject width="1rem" height="1rem">
                           <img src={arrow} alt="Image" width="100%" height="100%" />
                         </foreignObject>
                       </svg>

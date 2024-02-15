@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
+import arrow from './arrow.svg';
 
 function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
@@ -110,8 +111,16 @@ function App() {
                     </div>
                   </li>
                 </ol>
-                <div className='resume'>
-                  <a href=""><span>View Full Resume</span></a>
+                <div className='resume-div'>
+                  <a href=""><span className='resume-span-1'>View Full
+                    <span className='resume-span-2'>
+                      Resume<
+                        svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <foreignObject width="16" height="16">
+                          <img src={arrow} alt="Image" width="100%" height="100%" />
+                        </foreignObject>
+                      </svg>
+                    </span></span></a>
                 </div>
                 {/* </div> */}
               </div>

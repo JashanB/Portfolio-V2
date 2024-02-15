@@ -14,9 +14,12 @@
   box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   filter: blur(0) brightness(100%) contrast(100%) grayscale(0) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%);
   /* backdrop-filter: blur(0) brightness(100%) contrast(100%) grayscale(0) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%); */
-  scroll-snap-type: y mandatory; /* or x mandatory for horizontal scrolling */
-  scroll-padding-top: 0; /* Set to adjust the top padding for snapping */
-  scroll-padding-bottom: 0; /* Set to adjust the bottom padding for snapping */
+  scroll-snap-type: y mandatory;
+  /* or x mandatory for horizontal scrolling */
+  scroll-padding-top: 0;
+  /* Set to adjust the top padding for snapping */
+  scroll-padding-bottom: 0;
+  /* Set to adjust the bottom padding for snapping */
 }
 
 .app-insert {
@@ -206,18 +209,7 @@
   line-height: 1.625;
   color: rgb(148 163 184/var(--tw-text-opacity));
   list-style: none;
-  /* opacity: 1; */
 }
-/* 
-.list-item::selection {
-  color: rgba(19, 78, 74, 0.5);
-} */
-/* 
-.list-item::after,
-::before {
-  box-sizing: border-box;
-  border: 0 solid #e5e7eb;
-} */
 
 .list-item-grid {
   display: grid;
@@ -241,26 +233,38 @@
   pointer-events: none;
 }
 
- /* .list-item-grid:hover {
-  opacity: 1 !important;
-}
-
-.absolute-inset-experience-visible:hover {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, .04)) drop-shadow(0 4px 3px rgba(0, 0, 0, .1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-} */
-
 .list-item-grid:hover .absolute-inset-experience-visible {
   opacity: 1;
   pointer-events: auto;
-} 
+}
 
 .absolute-inset-experience-hidden {
   display: none;
 }
 
 .list-item-main {
-  z-index: 1;
+  z-index: 10;
+}
+
+.date-list-item {
+  color: rgb(100 116 139/var(--tw-text-opacity));
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .75rem;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 10;
+}
+
+.list-item-header {
+  color: rgba(226, 232, 240);
+  line-height: 1.375;
+  font-weight: 500;
+margin: 0;
+font-size: inherit;
+
 }
 
 .tech-stack-flex-box {
@@ -311,6 +315,15 @@
     gap: 2rem;
     grid-template-columns: repeat(8, minmax(0, 1fr));
 
+  }
+
+  .date-list-item {
+    grid-column: span 2/span 2;
+    opacity: 1;
+  }
+
+  .list-item-main {
+    grid-column: span 6/span 6;
   }
 }
 

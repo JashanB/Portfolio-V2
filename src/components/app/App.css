@@ -192,21 +192,20 @@
   --tw-bg-opacity: 1;
 }
 
-.experience-container {
+/* .experience-container {
   display: grid;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: .15s;
   padding-bottom: 0.25rem;
   position: relative;
-}
+} */
 
 .group-list {
   list-style: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
-
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
   display: block;
@@ -239,6 +238,40 @@
 
 }
 
+.absolute-inset-experience {
+  position: absolute;
+  
+  border-radius: 0.375rem;
+  top: -1rem;
+  bottom: -1rem;
+}
+
+.tech-stack-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tech-item-div {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212/var(--tw-text-opacity));
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: .75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgba(45, 212, 191, .1);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+}
+
+.resume {
+  margin-top: 3rem;
+}
+
 /* 640 MEDIA */
 @media (min-width: 640px) {
   .list-item-grid {
@@ -255,10 +288,16 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
+/* 
   .experience-container {
     gap: 2rem;
     grid-template-columns: repeat(8,minmax(0,1fr));
+  } */
+
+  .absolute-inset-experience {
+    display: block;
+    left: -1.5rem;
+    right: -1.5rem;
   }
 
 }
@@ -289,10 +328,10 @@
     margin-right: -3rem;
   }
 
-  .experience-container {
+  /* .experience-container {
     gap: 1rem;
 
-  }
+  } */
 }
 
 /* 1024 MEDIA */
@@ -341,37 +380,4 @@
     margin-bottom: 9rem;
   }
 
-}
-
-.absolute-inset {
-  position: absolute;
-  border-radius: 0.375rem;
-  top: -1rem;
-  bottom: -1rem;
-}
-
-.tech-stack-flex-box {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
-}
-
-.tech-item-div {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212/var(--tw-text-opacity));
-  line-height: 1.25rem;
-  font-weight: 500;
-  font-size: .75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  background-color: rgba(45, 212, 191, .1);
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-}
-
-.resume {
-  margin-top: 3rem;
 }

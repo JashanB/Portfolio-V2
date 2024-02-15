@@ -210,12 +210,15 @@
   transition-duration: .15s;
 }
 
-.absolute-inset-experience {
+.absolute-inset-experience-visible {
   position: absolute;
   
   border-radius: 0.375rem;
   top: -1rem;
   bottom: -1rem;
+}
+.absolute-inset-experience-hidden {
+  display: none;
 }
 
 .tech-stack-flex-box {
@@ -262,7 +265,7 @@
     line-height: 1.75rem;
   }
 
-  .absolute-inset-experience {
+  .absolute-inset-experience-visible {
     display: block;
     left: -1.5rem;
     right: -1.5rem;

@@ -304,8 +304,19 @@
   align-items: center;
 }
 
-.resume {
+.resume-div {
   margin-top: 3rem;
+}
+
+.resume-link {
+  color: rgb(226 232 240);
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1rem;
+  align-items: baseline;
+  display: inline-flex;
+  text-decoration: none;
+
 }
 
 /* 640 MEDIA */

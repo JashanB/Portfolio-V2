@@ -112,7 +112,7 @@ function App() {
                   </li>
                 </ol>
                 <div className='resume-div'>
-                  <a href=""><span className='resume-span-1'>View Full
+                  <a className="resume-link" href=""><span className='resume-span-1'>View Full
                     <span className='resume-span-2'>
                       Resume<
                         svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

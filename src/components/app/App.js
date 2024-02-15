@@ -75,10 +75,12 @@ function App() {
                     <div className='list-item-grid'>
                       {/*Around list item, greater than dimensions, show on hover, hide on <1024px*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>2020-2021</header>
+                      <header className='date-list-item'>Nov 2020- June 2021</header>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
-                        <p>Experience at TBN description</p>
+                        <p>Conceptualized, designed, and developed a robust sales website from the ground up which featured over 25,000 products.
+Collaborated closely with a team of graphic designers to translate their vision into an engaging user interface.
+Demonstrated exceptional teamwork and communication skills throughout the project, ensuring seamless coordination between different teams.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
                           <li className='tech-item'><div className="tech-item-div">Ruby</div></li>

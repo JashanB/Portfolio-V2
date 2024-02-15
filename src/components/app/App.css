@@ -262,9 +262,16 @@
   color: rgba(226, 232, 240);
   line-height: 1.375;
   font-weight: 500;
-margin: 0;
-font-size: inherit;
+  margin: 0;
+  font-size: inherit;
 
+}
+
+.list-item-main p {
+  line-height: 1.5;
+  font-size: .875rem;
+  margin-top: 0.5rem;
+  color: rgb(148 163 184);
 }
 
 .tech-stack-flex-box {

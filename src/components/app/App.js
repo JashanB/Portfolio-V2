@@ -79,8 +79,8 @@ function App() {
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
                         <p>Conceptualized, designed, and developed a robust sales website from the ground up which featured over 25,000 products.
-Collaborated closely with a team of graphic designers to translate their vision into an engaging user interface.
-Demonstrated exceptional teamwork and communication skills throughout the project, ensuring seamless coordination between different teams.</p>
+                          Collaborated closely with a team of graphic designers to translate their vision into an engaging user interface.
+                          Demonstrated exceptional teamwork and communication skills throughout the project, ensuring seamless coordination between different teams.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
                           <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
@@ -125,7 +125,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                 <ul className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Social Site</span></h3>
                         <p>Instagram clone describe more</p>
@@ -140,7 +140,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Bettr Trip</span></h3>
                         <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
@@ -159,7 +159,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Weather App</span></h3>
                         <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons. WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage and reduced API calls.</p>
@@ -176,7 +176,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Newton</span></h3>
                         <p>Pinterest-like app for learners. Express web app that allows learners to save learning resources like tutorials, blogs and videos
@@ -205,7 +205,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                 <ul className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Dalhousie Research Day (2023)</span></h3>
                         <p>Assessing Burnout in Medical Learners</p>
@@ -214,7 +214,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>International Journal of Stroke (2016)</span></h3>
                         <p>Technological Trends in Stroke Rehabilitation for Motor Function Recovery (Vol 11 Pg 68-68).</p>
@@ -223,7 +223,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>Archives of Physical Medicine and Rehabilitation (2016)</span></h3>
@@ -233,7 +233,7 @@ Demonstrated exceptional teamwork and communication skills throughout the projec
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                    <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
                         <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>Evidence-Based Review of Stroke Rehabilitation (2016)</span></h3>

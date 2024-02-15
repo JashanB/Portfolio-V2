@@ -345,9 +345,8 @@
   transition-property: transform;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
-  transform:
-    translateX(2px) translateY(4px) scaleX(1.2) scaleY(1.5);
-  ;
+  transform: translate(2px, -4px);
+
 }
 /* 640 MEDIA */
 

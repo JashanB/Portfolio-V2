@@ -76,7 +76,7 @@ function App() {
                     <div className='list-item-grid'>
                       {/*Around list item, greater than dimensions, show on hover, hide on <1024px*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>Nov 2020- June 2021</header>
+                      <header className='date-list-item'>Nov 2020 - June 2021</header>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
                         <p>Conceptualized, designed, and developed a robust sales website from the ground up which featured over 25,000 products.
@@ -98,10 +98,12 @@ function App() {
                     <div className='list-item-grid'>
                       {/*Around list item, greater than dimensions, show on hover*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>2019-2020</header>
+                      <header className='date-list-item'>Mar 2019 - Nov2020</header>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Jr Software Engineer &#183; CarltonOne Engagement</span></h3>
-                        <p>Experience at CarltonOne description</p>
+                        <p>Designed automations to identify discrepancies in invoices for a multinational retailer.
+                          Personally designed and prototyped a revolutionary automation system on my own time that addressed critical inefficiencies in the previous system. Communicated this project in a convincing manner which garnered buy-in from management for its potential effectiveness. This led to the system's full-scale implementation, decreasing the average 8-minute processing time per invoice to near-instantaneous results.
+                        </p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">Python</div></li>
                           <li className='tech-item'><div className="tech-item-div">SQL Management Server</div></li>
@@ -118,7 +120,7 @@ function App() {
                       <svg xmlns="http://www.w3.org/2000/svg">
                         <foreignObject width="1rem" height="1rem">
                           <img src={arrow} alt="Image" width="100%" height="100%" />
-                        </foreignObject>
+                        </foreignObject><path fill="rgb(94, 234, 211)"></path>
                       </svg>
                     </span></span></a>
                 </div>

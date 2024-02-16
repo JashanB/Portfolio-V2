@@ -340,6 +340,8 @@
   transform: translate(2px, -4px);
 }
 
+.arrow-resume {
+}
 /* 640 MEDIA */
 
 @media (min-width: 640px) {

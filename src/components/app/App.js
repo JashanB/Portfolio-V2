@@ -117,10 +117,10 @@ function App() {
                   <a className="resume-link" href=""><span className='resume-span-1'>View Full&nbsp;
                     <span className='resume-span-2'>
                       Resume
-                      <svg xmlns="http://www.w3.org/2000/svg">
-                        <foreignObject width="1rem" height="1rem">
-                          <img src={arrow} alt="Image" width="100%" height="100%" />
-                        </foreignObject><path fill="rgb(94, 234, 211)"></path>
+                      <svg style={{ fill: 'red' }} xmlns="http://www.w3.org/2000/svg">
+                        <foreignObject style={{ fill: 'red' }} width="1rem" height="1rem">
+                          <img style={{ fill: 'red' }} src={arrow} alt="Image" width="100%" height="100%" />
+                        </foreignObject>
                       </svg>
                     </span></span></a>
                 </div>
@@ -134,6 +134,7 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
+                <header className='date-list-item'>Mar 2019 - Nov2020</header>
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>

@@ -12,11 +12,11 @@ function App() {
   const [smallScreen, setSmallScreen] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  function setLinkHovered () {
+  function setLinkHovered() {
     setHovered(state => true);
   }
 
-  function stopLinkHover () {
+  function stopLinkHover() {
     setHovered(state => false);
   }
 
@@ -132,26 +132,27 @@ function App() {
                     </div>
                   </li>
                 </ol>
-                <div className='resume-div'>
-                  <a className="resume-link" href=""><span className='resume-span-1'>View Full&nbsp;
-                    <span className='resume-span-2' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
-                      Resume
-                      {/* <svg xmlns="http://www.w3.org/2000/svg">
+                <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
+                  <a className="resume-link" href="">
+                    <span className='resume-span-1'>View Full&nbsp;
+                      <span className='resume-span-2'>
+                        Resume
+                        {/* <svg xmlns="http://www.w3.org/2000/svg">
                         <foreignObject width="1rem" height="1rem">
 
                           <img src={arrow} alt="Image" width="100%" height="100%" />
                         </foreignObject>
                       </svg> */}
-      
-                      <svg 
-                      className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered? hoveredStyle.fill : linkStyle.fill} stroke={hovered? hoveredStyle.stroke : linkStyle.stroke}xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier"  stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier"  stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier" >
-                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </g>
-                      </svg>
-                    </span></span></a>
+
+                        <svg
+                          className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier" >
+                            <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </g>
+                        </svg>
+                      </span></span></a>
                 </div>
                 {/* </div> */}
               </div>

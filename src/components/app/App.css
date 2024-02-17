@@ -220,6 +220,10 @@
   transition-duration: .15s;
 }
 
+.list-item:hover .list-item-header {
+  color: rgba(94, 234, 211, 0.9);
+}
+
 .absolute-inset-experience-visible {
   position: absolute;
   display: block;
@@ -332,12 +336,21 @@
   transform: translate(-2px, 2px);
   transition: 0.15s ease-in-out;
 }
+
 .resume-div:hover .resume-span-2 svg {
   transition-property: transform;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
   transform: translate(2px, -4px);
 }
+
+.resume-div:hover .resume-link span {
+  color: rgba(94, 234, 211, 0.9);
+  transition-duration: .15s;
+  transition: 0.15s ease-in-out;
+
+}
+
 
 /* 640 MEDIA */
 

@@ -10,6 +10,15 @@ function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
   // const [hoveredNav, setHoveredNav] = useState(null);
   const [smallScreen, setSmallScreen] = useState(false);
+  const [hovered, setHovered] = useState(false);
+
+  function setLinkHovered () {
+    setHovered(state => true);
+  }
+
+  function stopLinkHover () {
+    setHovered(state => false);
+  }
 
   useEffect(() => {
     function handleResize() {

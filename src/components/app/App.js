@@ -31,6 +31,16 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const linkStyle = {
+    fill: "white",
+    stroke: "white"
+  }
+
+  const hoveredStyle = {
+    fill: "red",
+    stroke: "red"
+  }
+
   //add when screen is at section, trigger on hover for that nav part
   return (
     <div className="App">
@@ -133,7 +143,8 @@ function App() {
                         </foreignObject>
                       </svg> */}
       
-                      <svg className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill="red" stroke="red" xmlns="http://www.w3.org/2000/svg">
+                      <svg onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}
+                      className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered? hoveredStyle.fill : linkStyle.fill} stroke={hovered? hoveredStyle.stroke : linkStyle.stroke}xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier"  stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier"  stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier" >

@@ -37,8 +37,8 @@ function App() {
   }
 
   const hoveredStyle = {
-    fill: "red",
-    stroke: "red"
+    fill: "rgba(94, 234, 211, 0.9)",
+    stroke: "rgba(94, 234, 211, 0.9)"
   }
 
   //add when screen is at section, trigger on hover for that nav part

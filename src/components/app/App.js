@@ -33,12 +33,14 @@ function App() {
 
   const linkStyle = {
     fill: "white",
-    stroke: "white"
+    stroke: "white",
+    color: 'white'
   }
 
   const hoveredStyle = {
     fill: "rgba(94, 234, 211, 0.9)",
-    stroke: "rgba(94, 234, 211, 0.9)"
+    stroke: "rgba(94, 234, 211, 0.9)",
+    color: 'rgba(94, 234, 211, 0.9)'
   }
 
   //add when screen is at section, trigger on hover for that nav part
@@ -134,8 +136,8 @@ function App() {
                 </ol>
                 <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
                   <a className="resume-link" href="">
-                    <span className='resume-span-1'>View Full&nbsp;
-                      <span className='resume-span-2'>
+                    <span className='resume-span-1' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full&nbsp;
+                      <span className='resume-span-2' color={hovered ? hoveredStyle.color : linkStyle.color}>
                         Resume
                         {/* <svg xmlns="http://www.w3.org/2000/svg">
                         <foreignObject width="1rem" height="1rem">

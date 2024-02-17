@@ -345,9 +345,9 @@
 }
 
 .resume-div:hover .resume-link span {
-  color: rgba(94, 234, 211, 0.9);
   transition-duration: .15s;
   transition: 0.15s ease-in-out;
+  color: rgba(94, 234, 211, 0.9);
 
 }
 

@@ -338,6 +338,7 @@
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
   transform: translate(2px, -4px);
+  stroke: rgba(94, 234, 211, 0.9));
 }
 
 .arrow-resume {

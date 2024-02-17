@@ -134,7 +134,7 @@ function App() {
                 </ol>
                 <div className='resume-div'>
                   <a className="resume-link" href=""><span className='resume-span-1'>View Full&nbsp;
-                    <span className='resume-span-2'>
+                    <span className='resume-span-2' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
                       Resume
                       {/* <svg xmlns="http://www.w3.org/2000/svg">
                         <foreignObject width="1rem" height="1rem">
@@ -143,7 +143,7 @@ function App() {
                         </foreignObject>
                       </svg> */}
       
-                      <svg onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}
+                      <svg 
                       className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered? hoveredStyle.fill : linkStyle.fill} stroke={hovered? hoveredStyle.stroke : linkStyle.stroke}xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier"  stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier"  stroke-linecap="round" stroke-linejoin="round"></g>

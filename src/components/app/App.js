@@ -140,13 +140,6 @@ function App() {
                     <span className='resume-span-1' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full&nbsp;
                       <span className='resume-span-2' color={hovered ? hoveredStyle.color : linkStyle.color}>
                         Resume
-                        {/* <svg xmlns="http://www.w3.org/2000/svg">
-                        <foreignObject width="1rem" height="1rem">
-
-                          <img src={arrow} alt="Image" width="100%" height="100%" />
-                        </foreignObject>
-                      </svg> */}
-
                         <svg
                           className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
                           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

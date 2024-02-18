@@ -34,7 +34,7 @@ function App() {
   const linkStyle = {
     fill: "white",
     stroke: "white",
-    color: 'white'
+    color: 'rgb(226 232 240)'
   }
 
   const hoveredStyle = {
@@ -135,7 +135,8 @@ function App() {
                   </li>
                 </ol>
                 <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
-                  <a className="resume-link" href="" color={hovered ? hoveredStyle.color : linkStyle.color}>
+                  <a className="resume-link" href=""  
+                  style={hovered ? {color: `${hoveredStyle.color}`} : {color: `${linkStyle.color}`}}>
                     <span className='resume-span-1' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full&nbsp;
                       <span className='resume-span-2' color={hovered ? hoveredStyle.color : linkStyle.color}>
                         Resume

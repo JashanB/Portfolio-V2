@@ -177,22 +177,6 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                  {/* <li className='list-item'>
-                    <div className='list-item-grid'>
-                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-        
-                      <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Social Site</span></h3>
-                        <p>Instagram clone describe more</p>
-                        <ul className='tech-stack-flex-box'>
-                          <li className='tech-item'><div className="tech-item-div">React</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Node.js</div></li>
-                          <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
-                          <li className='tech-item'><div className="tech-item-div">RESTful API</div></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li> */}
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>

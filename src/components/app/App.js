@@ -229,7 +229,7 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item'>
+                  <li className='list-item' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{
@@ -241,7 +241,18 @@ function App() {
                         maxHeight: '50%'
                       }}></div>
                       <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Newton</span></h3>
+                        {/* <h3 className='list-item-header'><span>Newton</span></h3> */}
+                        <a className="resume-link" href="https://github.com/JashanB/Newton" style={hovered ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hovered ? hoveredStyle.color : linkStyle.color}>Newton
+                            <svg
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier" >
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </g>
+                            </svg>
+                          </span></a>
                         <p>Pinterest-like app for learners. Express web app that allows learners to save learning resources like tutorials, blogs and videos
                           in a central place that is publicly available to any user. Search community resources or topics, comment on and rate resources,
                           or upload your own! User signup and authentication is fully supported through cookies.</p>

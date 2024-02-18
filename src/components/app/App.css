@@ -250,7 +250,8 @@
   z-index: 10;
 }
 
-.date-list-item {
+.date-list-item,
+.img-container {
   color: rgb(100 116 139/var(--tw-text-opacity));
   letter-spacing: .025em;
   text-transform: uppercase;
@@ -321,7 +322,7 @@
   text-decoration: none;
 }
 
- .resume-span {
+.resume-span {
   display: inline-block;
 }
 
@@ -332,7 +333,7 @@
   display: inline-block;
   margin-left: 0.25rem;
   vertical-align: middle;
- 
+
 }
 
 .resume-div:hover .resume-span svg {
@@ -371,10 +372,13 @@
 
   }
 
-  .date-list-item, .img-container {
+  .date-list-item,
+  .img-container {
     grid-column: span 2/span 2;
     opacity: 1;
+    z-index: 10;
   }
+
 
   .list-item-main {
     grid-column: span 6/span 6;

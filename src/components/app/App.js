@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
-import arrow from './arrow.svg';
+import newton from "./Newton1.png";
 
 function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
@@ -179,9 +179,11 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       {/* <header className='date-list-item'>Nov 2020 - June 2021</header> */}
                       <div className='img-container' style={{
-                        backgroundImage: `url('./Newton1.png')`,
-                        backgroundSize: 'cover', // Adjusts the background image size to cover the entire container
-                        backgroundPosition: 'center', // Centers the background image within the container
+                        backgroundImage: `url(${newton})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'left',
+                        width: '100%',
+                        height: '100%'
                       }}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Social Site</span></h3>

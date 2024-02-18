@@ -352,6 +352,9 @@
   transform: translate(3px, -4px);
 }
 
+.project-span svg {
+  transform: translateY(4px);
+}
 .resume-div:hover .resume-link span {
   transition-duration: .15s;
   transition: 0.15s ease-in-out;

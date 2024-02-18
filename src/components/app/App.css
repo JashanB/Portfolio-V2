@@ -250,8 +250,7 @@
   z-index: 10;
 }
 
-.date-list-item,
-.img-container {
+.date-list-item {
   color: rgb(100 116 139/var(--tw-text-opacity));
   letter-spacing: .025em;
   text-transform: uppercase;

@@ -5,6 +5,8 @@ import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
 import newton from "./Newton1.png";
+import weather from './weather.png';
+import bettr from './bettr.png';
 
 function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
@@ -174,17 +176,10 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                  <li className='list-item'>
+                  {/* <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      {/* <header className='date-list-item'>Nov 2020 - June 2021</header> */}
-                      <div className='img-container' style={{
-                        backgroundImage: `url(${newton})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'left',
-                        width: '100%',
-                        height: '100%'
-                      }}></div>
+        
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Social Site</span></h3>
                         <p>Instagram clone describe more</p>
@@ -196,10 +191,18 @@ function App() {
                         </ul>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className='img-container' style={{
+                        backgroundImage: `url(${bettr})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '100%',
+                        height: '100%',
+                        maxHeight: '50%'
+                      }}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Bettr Trip</span></h3>
                         <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
@@ -219,6 +222,14 @@ function App() {
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className='img-container' style={{
+                        backgroundImage: `url(${weather})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'left',
+                        width: '100%',
+                        height: '100%',
+                        maxHeight: '50%'
+                      }}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Weather App</span></h3>
                         <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons. WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage and reduced API calls.</p>
@@ -236,6 +247,14 @@ function App() {
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className='img-container' style={{
+                        backgroundImage: `url(${newton})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'left',
+                        width: '100%',
+                        height: '100%',
+                        maxHeight: '50%'
+                      }}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Newton</span></h3>
                         <p>Pinterest-like app for learners. Express web app that allows learners to save learning resources like tutorials, blogs and videos

@@ -321,7 +321,7 @@
   text-decoration: none;
 }
 
-.resume-span-2 {
+/* .resume-span-2 {
   display: inline-block;
 }
 
@@ -341,6 +341,28 @@
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
   transform: translate(2px, -4px);
+}
+ */
+
+ .resume-span {
+  display: inline-block;
+}
+
+.resume-span svg {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+ 
+}
+
+.resume-div:hover .resume-span svg {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+  transform: translate(3px, -4px);
 }
 
 .resume-div:hover .resume-link span {

@@ -371,7 +371,7 @@
 
   }
 
-  .date-list-item {
+  .date-list-item, .img-container {
     grid-column: span 2/span 2;
     opacity: 1;
   }

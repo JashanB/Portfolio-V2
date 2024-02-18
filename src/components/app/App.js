@@ -44,6 +44,11 @@ function App() {
   }
 
   //add when screen is at section, trigger on hover for that nav part
+  //add images to projects 
+  //fix inset for publications
+  //add resume
+  //add footer 
+
   return (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
@@ -119,7 +124,7 @@ function App() {
                     <div className='list-item-grid'>
                       {/*Around list item, greater than dimensions, show on hover*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>Mar 2019 - Nov2020</header>
+                      <header className='date-list-item'>Mar 2019 - Nov 2020</header>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Jr Software Engineer &#183; CarltonOne Engagement</span></h3>
                         <p>Designed automations to identify discrepancies in invoices for a multinational retailer.
@@ -135,7 +140,7 @@ function App() {
                   </li>
                 </ol>
                 <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
-                  <a className="resume-link" href="" style={hovered ? {color: `${hoveredStyle.color}`} : {color: `${linkStyle.color}`}}>
+                  <a className="resume-link" href="" style={hovered ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                     {/* <span className='resume-span-1' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full&nbsp;
                       <span className='resume-span-2' color={hovered ? hoveredStyle.color : linkStyle.color}>
                         Resume
@@ -148,16 +153,16 @@ function App() {
                           </g>
                         </svg>
                       </span></span></a> */}
-                      <span className='resume-span' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full Resume
-                        <svg
-                          className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                          <g id="SVGRepo_iconCarrier" >
-                            <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </g>
-                        </svg>
-                      </span></a>
+                    <span className='resume-span' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full Resume
+                      <svg
+                        className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier" >
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </span></a>
                 </div>
                 {/* </div> */}
               </div>
@@ -169,10 +174,15 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                  <header className='date-list-item'>Mar 2019 - Nov2020</header>
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      {/* <header className='date-list-item'>Nov 2020 - June 2021</header> */}
+                      <div className='img-container' style={{
+                        backgroundImage: `url('./Newton1.png')`,
+                        backgroundSize: 'cover', // Adjusts the background image size to cover the entire container
+                        backgroundPosition: 'center', // Centers the background image within the container
+                      }}></div>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Social Site</span></h3>
                         <p>Instagram clone describe more</p>

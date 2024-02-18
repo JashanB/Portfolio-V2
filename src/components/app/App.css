@@ -321,29 +321,6 @@
   text-decoration: none;
 }
 
-/* .resume-span-2 {
-  display: inline-block;
-}
-
-.resume-span-2 svg {
-  flex-shrink: 0;
-  width: 1rem;
-  height: 1rem;
-  display: inline-block;
-  margin-left: 0.25rem;
-  vertical-align: middle;
-  transform: translate(-2px, 2px);
-  transition: 0.15s ease-in-out;
-}
-
-.resume-div:hover .resume-span-2 svg {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .15s;
-  transform: translate(2px, -4px);
-}
- */
-
  .resume-span {
   display: inline-block;
 }
@@ -368,10 +345,7 @@
 .resume-div:hover .resume-link span {
   transition-duration: .15s;
   transition: 0.15s ease-in-out;
-  /* color: rgba(94, 234, 211, 0.9); */
-
 }
-
 
 /* 640 MEDIA */
 

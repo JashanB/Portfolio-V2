@@ -179,10 +179,10 @@ function App() {
                       <svg
                         className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['resume'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['resume'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
 
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier" >
-                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                         </g>
                       </svg>
                     </span>
@@ -215,10 +215,10 @@ function App() {
                           <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>Bettr Trip
                             <svg
                               className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project1'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project1'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                               </g>
                             </svg>
                           </span></a>
@@ -255,10 +255,10 @@ function App() {
                           <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>WeatherApp
                             <svg
                               className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project2'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project2'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                               </g>
                             </svg>
                           </span></a>
@@ -294,10 +294,10 @@ function App() {
                           <span className='project-span' color={hoveredObj['project3'] ? hoveredStyle.color : linkStyle.color}>Newton
                             <svg
                               className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project3'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project3'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
-                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                               </g>
                             </svg>
                           </span></a>
@@ -321,10 +321,10 @@ function App() {
                     <span className='resume-span' color={hoveredObj['github'] ? hoveredStyle.color : linkStyle.color}>Check out my latest projects on Github
                       <svg
                         className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['github'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['github'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier" >
-                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                         </g>
                       </svg>
                     </span>

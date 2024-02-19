@@ -222,8 +222,8 @@ function App() {
                               </g>
                             </svg>
                           </span></a>
-                          <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting 
-                            points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
+                        <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting
+                          points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>
                           <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
@@ -381,6 +381,11 @@ function App() {
                 </ul>
               </div>
             </Element>
+            <footer className='footer'>
+              <p>Design by <a href="https://brittanychiang.com/">Brittany Chiang</a> coded in <a href="https://code.visualstudio.com/">Visual Studio Code</a> by myself.
+              Built with React and basic CSS, deployed with <a href="https://www.netlify.com/">Netlify.</a>
+              </p>
+            </footer>
           </main>
         </div>
       </div>

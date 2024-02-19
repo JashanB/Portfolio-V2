@@ -54,8 +54,8 @@ function App() {
       }
     })
   }
-  
-  function handleNavigate (destination) {
+
+  function handleNavigate(destination) {
     // navigate(`${destination}`);
     window.location.href = destination;
   }
@@ -205,7 +205,9 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                  <li className='list-item'>
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project1')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                    onClick={() => handleNavigate("https://github.com/moa-novae/Bettr_Trip")}
+                  >
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{
@@ -217,8 +219,19 @@ function App() {
                         maxHeight: '50%'
                       }}></div>
                       <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Bettr Trip</span></h3>
-                        <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
+                        <a className="resume-link" href="https://github.com/moa-novae/Bettr_Trip" style={hoveredObj['project1'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>Bettr Trip
+                            <svg
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project1'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project1'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier" >
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </g>
+                            </svg>
+                          </span></a>
+                          <p>A web tool to plan your trip itinerary while referencing an interactive map. Weather, travel duration, and nearby interesting 
+                            points are also shown for locations. A RESTful back-end server allows users to save trips and create multiple trips at once.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>
                           <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
@@ -233,7 +246,7 @@ function App() {
                     </div>
                   </li>
                   <li className='list-item' onMouseEnter={() => setObjHovered('project2')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
-                  onClick={() => handleNavigate("https://github.com/JashanB/WeatherApp")}
+                    onClick={() => handleNavigate("https://github.com/JashanB/WeatherApp")}
                   >
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
@@ -257,10 +270,10 @@ function App() {
                               </g>
                             </svg>
                           </span></a>
-                          <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons. 
-                            WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage 
-                            and reduced API calls.</p>
-                            <ul className='tech-stack-flex-box'>
+                        <p>Weather Forecasts for your favourite locations. Hourly forecasts for the next 48 hours and weekly and historical comparisons.
+                          WeatherApp is a mobile optimized app that uses a RESTful back-end server that saves the user's searched locations, allowing for personalized usage
+                          and reduced API calls.</p>
+                        <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>
                           <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
                           <li className='tech-item'><div className="tech-item-div">PostgreSQL</div></li>
@@ -272,7 +285,7 @@ function App() {
                     </div>
                   </li>
                   <li className='list-item' onMouseEnter={() => setObjHovered('project3')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
-                  onClick={() => handleNavigate("https://github.com/JashanB/Newton")}
+                    onClick={() => handleNavigate("https://github.com/JashanB/Newton")}
                   >
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>

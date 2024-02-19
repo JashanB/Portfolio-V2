@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
+// import { Navigate, useNavigate } from 'react-router-dom';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
@@ -11,6 +12,7 @@ import bettr from './bettr.png';
 function App() {
   // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
   // const [hoveredNav, setHoveredNav] = useState(null);
+  // const navigate = useNavigate();
   const [smallScreen, setSmallScreen] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [hoveredObj, setHoveredObj] = useState({
@@ -20,14 +22,14 @@ function App() {
     resume: false,
     github: false
   })
+  //***********FUNCTIONS***********
 
+  //deprecated
   function setLinkHovered() {
     setHovered(state => true);
   }
-
+  //trigger css changes on hovering items
   function setObjHovered(section) {
-    console.log(hoveredObj)
-    console.log(section)
     setHoveredObj((state) => {
       return {
         ...state,
@@ -36,10 +38,11 @@ function App() {
     })
   }
 
+  //deprecated
   function stopLinkHover() {
     setHovered(state => false);
   }
-
+  //revert css hover changes to standard
   function setOffObjHovered() {
     setHoveredObj((state) => {
       return {
@@ -51,7 +54,13 @@ function App() {
       }
     })
   }
+  
+  function handleNavigate (destination) {
+    // navigate(`${destination}`);
+    window.location.href = destination;
+  }
 
+  //trigger state change at 1024 px
   useEffect(() => {
     function handleResize() {
       setSmallScreen(state => window.innerWidth >= 1024);
@@ -63,12 +72,12 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  //Styling for hovered items
   const linkStyle = {
     fill: "white",
     stroke: "white",
     color: 'rgb(226 232 240)'
   }
-
   const hoveredStyle = {
     fill: "rgba(94, 234, 211, 0.9)",
     stroke: "rgba(94, 234, 211, 0.9)",
@@ -248,7 +257,9 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item' onMouseEnter={() => setObjHovered('project3')} onMouseLeave={setOffObjHovered}>
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project3')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                  onClick={() => handleNavigate("https://github.com/JashanB/Newton")}
+                  >
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{

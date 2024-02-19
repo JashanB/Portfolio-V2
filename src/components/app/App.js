@@ -17,7 +17,8 @@ function App() {
     project1: false,
     project2: false,
     project3: false,
-    resume: false
+    resume: false,
+    github: false
   })
 
   function setLinkHovered() {
@@ -25,6 +26,8 @@ function App() {
   }
 
   function setObjHovered(section) {
+    console.log(hoveredObj)
+    console.log(section)
     setHoveredObj((state) => {
       return {
         ...state,
@@ -43,7 +46,8 @@ function App() {
         project1: false,
         project2: false,
         project3: false,
-        resume: false
+        resume: false,
+        github: false
       }
     })
   }
@@ -186,7 +190,7 @@ function App() {
                           </g>
                         </svg>
                       </span></span></a> */}
-                      {/* TESTING HOVEERS*/}
+                    {/* TESTING HOVEERS*/}
                     {/* <span className='resume-span' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full Resume */}
                     <span className='resume-span' color={hoveredObj['resume'] ? hoveredStyle.color : linkStyle.color}>View Full Resume
 
@@ -201,7 +205,7 @@ function App() {
                         </g>
                       </svg>
                     </span>
-                    </a>
+                  </a>
                 </div>
                 {/* </div> */}
               </div>
@@ -265,7 +269,8 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
+                  {/* <li className='list-item' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}> */}
+                  <li className='list-item' onMouseEnter={() => setObjHovered('resume')} onMouseLeave={setOffObjHovered}>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{
@@ -278,6 +283,7 @@ function App() {
                       }}></div>
                       <div className='list-item-main'>
                         {/* <h3 className='list-item-header'><span>Newton</span></h3> */}
+
                         <a className="resume-link" href="https://github.com/JashanB/Newton" style={hovered ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                           <span className='project-span' color={hovered ? hoveredStyle.color : linkStyle.color}>Newton
                             <svg
@@ -304,7 +310,7 @@ function App() {
                     </div>
                   </li>
                 </ul>
-                <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
+                {/* <div className='resume-div' onMouseEnter={setLinkHovered} onMouseLeave={stopLinkHover}>
                   <a className="resume-link" href="https://github.com/jashanb" style={hovered ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                     <span className='resume-span' color={hovered ? hoveredStyle.color : linkStyle.color}>Check out my latest projects on Github
                       <svg
@@ -316,6 +322,40 @@ function App() {
                         </g>
                       </svg>
                     </span></a>
+                </div> */}
+                <div className='resume-div' onMouseEnter={() => setObjHovered('github')} onMouseLeave={setOffObjHovered}>
+
+                  {/* <a className="resume-link" href="" style={hovered ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}> */}
+                  <a className="resume-link" href="" style={hoveredObj['github'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+
+                    {/* <span className='resume-span-1' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full&nbsp;
+    <span className='resume-span-2' color={hovered ? hoveredStyle.color : linkStyle.color}>
+      Resume
+      <svg
+        className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier" >
+          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </span></span></a> */}
+                    {/* TESTING HOVEERS*/}
+                    {/* <span className='resume-span' color={hovered ? hoveredStyle.color : linkStyle.color}>View Full Resume */}
+                    <span className='resume-span' color={hoveredObj['github'] ? hoveredStyle.color : linkStyle.color}>Check out my latest projects on Github
+
+                      <svg
+                        // className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hovered ? hoveredStyle.fill : linkStyle.fill} stroke={hovered ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                        className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['github'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['github'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier" >
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
               </div>
             </section>

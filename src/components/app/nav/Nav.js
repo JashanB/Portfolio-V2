@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import './Nav.css';
 
 export default function Nav(props) {
@@ -22,37 +23,37 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav(1)}
                     onMouseLeave={() => moveOffNav(1)}
                 >
-                    <a href="" className='flex-nav-center'>
+                    <Link spy={true} smooth={true} offset={-50} duration={500} to="about" className='flex-nav-center'>
                         <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={hoveredNav === 1 ? "nav-text-elongate" : "nav-text-normal"}>About</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className={hoveredNav === 2 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(2)}
                     onMouseLeave={() => moveOffNav(2)}
                 >
-                    <a href="" className='flex-nav-center'>
+                    <Link spy={true} smooth={true} offset={-50} duration={500} to="experience" className='flex-nav-center'>
                         <span className={hoveredNav === 2 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={hoveredNav === 2 ? "nav-text-elongate" : "nav-text-normal"}>Experience</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className={hoveredNav === 3 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(3)}
                     onMouseLeave={() => moveOffNav(3)}
                 >
-                    <a href="" className='flex-nav-center'>
+                    <Link spy={true} smooth={true} offset={-50} duration={500} to="projects" className='flex-nav-center'>
                         <span className={hoveredNav === 3 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={hoveredNav === 3 ? "nav-text-elongate" : "nav-text-normal"}>Projects</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className={hoveredNav === 4 ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav(4)}
                     onMouseLeave={() => moveOffNav(4)}
                 >
-                    <a href="" className='flex-nav-center'>
+                    <Link spy={true} smooth={true} offset={-50} duration={500} to="publications" className='flex-nav-center'>
                         <span className={hoveredNav === 4 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={hoveredNav === 4 ? "nav-text-elongate" : "nav-text-normal"}>Publications</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>

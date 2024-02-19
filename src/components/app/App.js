@@ -10,11 +10,7 @@ import weather from './weather.png';
 import bettr from './bettr.png';
 
 function App() {
-  // const [navItemClass, setNavItemClass] = useState("nav-item-normal");
-  // const [hoveredNav, setHoveredNav] = useState(null);
-  // const navigate = useNavigate();
   const [smallScreen, setSmallScreen] = useState(false);
-  const [hovered, setHovered] = useState(false);
   const [hoveredObj, setHoveredObj] = useState({
     project1: false,
     project2: false,
@@ -24,10 +20,6 @@ function App() {
   })
   //***********FUNCTIONS***********
 
-  //deprecated
-  function setLinkHovered() {
-    setHovered(state => true);
-  }
   //trigger css changes on hovering items
   function setObjHovered(section) {
     setHoveredObj((state) => {
@@ -38,10 +30,6 @@ function App() {
     })
   }
 
-  //deprecated
-  function stopLinkHover() {
-    setHovered(state => false);
-  }
   //revert css hover changes to standard
   function setOffObjHovered() {
     setHoveredObj((state) => {

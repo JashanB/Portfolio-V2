@@ -355,6 +355,15 @@
   transition: 0.15s ease-in-out;
 }
 
+.footer {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding-bottom: 4rem;
+  max-width: 28rem;
+  display: block;
+
+}
+
 /* 640 MEDIA */
 
 @media (min-width: 640px) {
@@ -389,6 +398,12 @@
 
   .list-item-main {
     grid-column: span 6/span 6;
+  }
+
+  .footer {
+    padding-bottom: 0;
+    color: rgba(100, 116, 139, 1);
+
   }
 }
 
@@ -462,7 +477,7 @@
     width: 50%;
     padding-bottom: 6rem;
   }
-  
+
   .section {
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;

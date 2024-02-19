@@ -6,6 +6,13 @@ export default function Nav(props) {
     const [hoveredNav, setHoveredNav] = useState(null);
     const [activeSection, setActiveSection] = useState(null);
 
+    const navObj = {
+        about: 1,
+        experience: 2,
+        projects: 3,
+        publications: 4
+    }
+
     function hoverNav(item) {
         console.log('entered', item)
         setHoveredNav(state => item);
@@ -16,11 +23,13 @@ export default function Nav(props) {
         setHoveredNav(state => null);
     }
 
-    function handleSetActive (to) {
+    function handleSetActive(to) {
         console.log('set active', to)
         setActiveSection(state => to);
-      };
-    
+        const navObjNumber = navObj[to];
+        hoverNav(navObjNumber)
+    };
+
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>
@@ -28,7 +37,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav(1)}
                     onMouseLeave={() => moveOffNav(1)}
                 >
-                    <Link spy={true} smooth={true} offset={-50} duration={500} to="about" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
+                    <Link spy={true} smooth={true} offset={0} duration={500} to="about" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
                         <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={hoveredNav === 1 ? "nav-text-elongate" : "nav-text-normal"}>About</span>
                     </Link>

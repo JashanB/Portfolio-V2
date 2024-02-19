@@ -361,7 +361,22 @@
   padding-bottom: 4rem;
   max-width: 28rem;
   display: block;
+}
 
+.footer p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(148, 163, 184, 1);
+}
+
+.footer p a:hover {
+  color: rgba(94, 234, 211, 0.9);
 }
 
 /* 640 MEDIA */

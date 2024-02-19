@@ -45,6 +45,15 @@ export default function Nav(props) {
                         <span className={hoveredNav === 3 ? "nav-text-elongate" : "nav-text-normal"}>Projects</span>
                     </a>
                 </li>
+                <li className={hoveredNav === 4 ? "hovered-nav-item" : "nav-item-normal"}
+                    onMouseEnter={() => hoverNav(4)}
+                    onMouseLeave={() => moveOffNav(4)}
+                >
+                    <a href="" className='flex-nav-center'>
+                        <span className={hoveredNav === 4 ? "nav-line-elongate" : "nav-line-normal"}></span>
+                        <span className={hoveredNav === 4 ? "nav-text-elongate" : "nav-text-normal"}>Publications</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     )

@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
-// import { Navigate, useNavigate } from 'react-router-dom';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
@@ -49,7 +49,11 @@ function App() {
   }
 
   //trigger state change at 1024 px
+
   useEffect(() => {
+
+    scrollSpy.update();
+
     function handleResize() {
       setSmallScreen(state => window.innerWidth >= 1024);
     }
@@ -121,6 +125,9 @@ function App() {
                 <p>About para 3</p>
               </div>
             </section>
+            <Element name="about" className='section'>
+              
+            </Element>
             <section id="experience">
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Experience</h2>

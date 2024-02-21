@@ -18,27 +18,20 @@ export default function Nav(props) {
     function hoverNav(section) {
         setHoveredNav(state => section);
     }
-    //move off nav while that is active means shouldnt set state to null
+
     function moveOffNav(section) {
-        // console.log('active', activeSection)
         if (activeSection !== section) {
             setHoveredNav(state => null);
         }
-        // if (item !== navObj[key]) {
-        //     console.log('yes')
-        // }
     }
 
     function handleSetActive(to) {
         if (!isNavigationClick) {
             setActiveSection(state => to);
-            // const navObjNumber = navObj[to];
-            // hoverNav(navObjNumber)
         };
     }
 
     function selectedNavItem(section) {
-        //return true or false
         if (activeSection === section || hoveredNav === section) {
             return true;
         } else {
@@ -49,9 +42,6 @@ export default function Nav(props) {
     useEffect(() => {
         handleSetActive('about')
     }, [])
-
-    //hoveredNav can only be 1 thing at once, therefore only 1 nav item will be highlighted
-    //need to maybe use function to check if active section or hovered to determine state, instead of just if hovered display 
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>

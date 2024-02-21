@@ -41,12 +41,21 @@ export default function Nav(props) {
         };
     }
 
+    function selectedNavItem (item) {
+        //return true or false
+        if (activeSection === item || hoveredNav === item) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     useEffect(() => {
         handleSetActive('about')
     }, [])
 
     //hoveredNav can only be 1 thing at once, therefore only 1 nav item will be highlighted
-    //need to maybe use function to check if active section or 
+    //need to maybe use function to check if active section or hovered to determine state, instead of just if hovered display 
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>

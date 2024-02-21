@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import debounce from 'lodash/debounce';
 import './Nav.css';
+
 
 export default function Nav(props) {
     const [hoveredNav, setHoveredNav] = useState(null);
@@ -16,6 +18,7 @@ export default function Nav(props) {
     }
 
     function hoverNav(section) {
+        console.log('hover', section)
         setHoveredNav(state => section);
     }
 
@@ -26,6 +29,7 @@ export default function Nav(props) {
     }
 
     function handleSetActive(to) {
+        console.log('set active', to)
         if (!isNavigationClick) {
             setActiveSection(state => to);
         };
@@ -46,11 +50,22 @@ export default function Nav(props) {
         }, 500);
         handleSetActive(section)
       };
-
+      
     useEffect(() => {
-        handleSetActive('about')
+        handleSetActive('about');
+        // const handleScroll = debounce(() => {
+        //     // Logic to determine active section based on scroll position
+        //     // Update setActiveSection accordingly
+        //   }, 100); // Adjust debounce delay as needed
+      
+        //   window.addEventListener('scroll', handleScroll);
+      
+        //   return () => {
+        //     window.removeEventListener('scroll', handleScroll);
+        //   };
+      
     }, [])
-
+    //Nav bugs: clicking nav item causes it tob e hovered permenentaly as page is scrolled
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>

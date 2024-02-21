@@ -15,17 +15,13 @@ export default function Nav(props) {
         publications: 4
     }
 
-    function hoverNav(item) {
-        console.log('entered', item)
-        setHoveredNav(state => item);
+    function hoverNav(section) {
+        setHoveredNav(state => section);
     }
 //move off nav while that is active means shouldnt set state to null
-    function moveOffNav(item) {
-        // console.log('exited', item)
-        let key = Object.keys(navObj)[parseInt(item) - 1];
-        console.log('key', key)
-        console.log('active', activeSection)
-        if (activeSection !== key) {
+    function moveOffNav(section) {
+        // console.log('active', activeSection)
+        if (activeSection !== section) {
             setHoveredNav(state => null);
         }
         // if (item !== navObj[key]) {
@@ -36,14 +32,14 @@ export default function Nav(props) {
     function handleSetActive(to) {
         if (!isNavigationClick) {
             setActiveSection(state => to);
-            const navObjNumber = navObj[to];
-            hoverNav(navObjNumber)
+            // const navObjNumber = navObj[to];
+            // hoverNav(navObjNumber)
         };
     }
 
-    function selectedNavItem (item) {
+    function selectedNavItem (section) {
         //return true or false
-        if (activeSection === item || hoveredNav === item) {
+        if (activeSection === section || hoveredNav === section) {
             return true;
         } else {
             return false;
@@ -61,8 +57,9 @@ export default function Nav(props) {
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>
                 <li className={hoveredNav === 1 ? "hovered-nav-item" : "nav-item-normal"}
-                    onMouseEnter={() => hoverNav(1)}
-                    onMouseLeave={() => moveOffNav(1)}
+                    onMouseEnter={() => hoverNav('about')}
+                    onMouseLeave={() => moveOffNav('about')}
+                    
                 >
                     <Link spy={true} smooth={true} offset={-100} duration={500} to="about" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
                         <span className={hoveredNav === 1 ? "nav-line-elongate" : "nav-line-normal"}></span>

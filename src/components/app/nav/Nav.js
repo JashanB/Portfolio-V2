@@ -68,7 +68,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav('experience')}
                     onMouseLeave={() => moveOffNav('experience')}
                 >
-                    <Link spy={true} smooth={true} offset={-60} duration={500} to="experience" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
+                    <Link spy={true} smooth={true} offset={-60} duration={500} to="experience" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('experience')}>
                         <span className={selectedNavItem('experience') ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={selectedNavItem('experience') ? "nav-text-elongate" : "nav-text-normal"}>Experience</span>
                     </Link>
@@ -77,7 +77,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav('projects')}
                     onMouseLeave={() => moveOffNav('projects')}
                 >
-                    <Link spy={true} smooth={true} offset={-60} duration={500} to="projects" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
+                    <Link spy={true} smooth={true} offset={-60} duration={500} to="projects" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('projects')}>
                         <span className={selectedNavItem('projects') ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={selectedNavItem('projects') ? "nav-text-elongate" : "nav-text-normal"}>Projects</span>
                     </Link>
@@ -86,7 +86,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav('publications')}
                     onMouseLeave={() => moveOffNav('publications')}
                 >
-                    <Link spy={true} smooth={true} offset={0} duration={500} to="publications" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
+                    <Link spy={true} smooth={true} offset={0} duration={500} to="publications" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('publications')}>
                         <span className={selectedNavItem('publications') ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={selectedNavItem('publications') ? "nav-text-elongate" : "nav-text-normal"}>Publications</span>
                     </Link>

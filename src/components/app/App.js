@@ -175,11 +175,10 @@ function App() {
                   </li>
                 </ol>
                 <div className='resume-div' onMouseEnter={() => setObjHovered('resume')} onMouseLeave={setOffObjHovered}>
-                  <a className="resume-link" href="" style={hoveredObj['resume'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                  <a className="resume-link" href="https://docs.google.com/document/d/1TIZdPR7KR5FTtZV6fSzdx4Wh0nV0GrkwtQhBXI_XueU/edit" style={hoveredObj['resume'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                     <span className='resume-span' color={hoveredObj['resume'] ? hoveredStyle.color : linkStyle.color}>View Full Resume
                       <svg
                         className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['resume'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['resume'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
-
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier" >

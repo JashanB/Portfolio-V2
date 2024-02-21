@@ -76,7 +76,7 @@ function App() {
     color: 'rgba(94, 234, 211, 0.9)'
   }
 
-  
+
   //fix inset for publications
   //add resume
   //add code woars
@@ -337,7 +337,7 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                {/* <li className='list-item'>
+                  {/* <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Nov 2020 - June 2021</header>
@@ -399,7 +399,7 @@ function App() {
 
                   </li>
                    */}
-                     <li className='list-item'>
+                  <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>International Journal of Stroke (2016)</header>
@@ -425,7 +425,6 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>ACRM Annual Meeting (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>The efficacy of playing musical instruments for upper limb rehabilitation among individuals with stroke: A systematic review</span></h3>
                         <p>Brar J, McIntyre A, Cotoi A, Jinah A, Iruthayarajah J, Vermeer J, Teasell R</p>
                       </div>
@@ -436,7 +435,6 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Canadian Stroke Congress (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>Technological trends in stroke rehabilitation for motor function recovery</span></h3>
                         <p>Jinah A, Cotoi A, Alibrahm F, McIntyre A, Brar J, Teasell R</p>
                       </div>
@@ -447,7 +445,6 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Canadian Stroke Congress (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>The state of stroke rehabilitation research</span></h3>
                         <p>Cotoi A, McIntyre A, Brar J, Jinah A, Anderson R, Teasell R</p>
                       </div>
@@ -458,7 +455,6 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>GTA Rehab: Best Practices Day (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>A systematic review of the efficacy of telerehabilitation interventions available for individuals with stroke</span></h3>
                         <p>Jinah A, Vermeer J, Allen L, Cotoi A, Brar J, McIntyre A, Teasell R</p>
                       </div>
@@ -469,7 +465,6 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>GTA Rehab: Best Practices Day (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>A systematic review of the efficacy of telerehabilitation interventions available for individuals with stroke</span></h3>
                         <p>Jinah A, Vermeer J, Allen L, Cotoi A, Brar J, McIntyre A, Teasell R</p>
                       </div>
@@ -478,20 +473,28 @@ function App() {
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>GTA Rehab: Best Practices Day (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
-                        <h3 className='list-item-header'><span>Evidence-Based Review of Stroke Rehabilitation (2016)</span></h3>
-                        <p>Chapter 13: Perceptual Disorders. Evidence-Based Review of Stroke Rehabilitation. Chapter 21: The Rehabilitation of Younger Stroke Patients. Evidence-Based Review of Stroke Rehabilitation. Chapter 14: Aphasia and Apraxia. Evidence-Based Review of Stroke Rehabilitation.</p>
+                        <h3 className='list-item-header'><span>The effect of hippotherapy or horseback riding simulation on lower limb motor function in stroke patients: a systematic review</span></h3>
+                        <p>Jinah A, Cotoi A, Brar J, McIntyre A, Teasell R</p>
                       </div>
                     </div>
-
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Evidence-Based Review of Stroke Rehabilitation (2016)</header>
+                      <div className='list-item-main'>
+                        <h3 className='list-item-header'><span>Chapters 13, 14, 21 of the Evidence-Based Review of Stroke Rehabilitation</span></h3>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
             </Element>
             <footer className='footer'>
               <p>Design by <a href="https://brittanychiang.com/">Brittany Chiang,</a> coded in <a href="https://code.visualstudio.com/">Visual Studio Code</a> by myself.
-              Built with React and basic CSS, deployed with <a href="https://www.netlify.com/">Netlify.</a>
+                Built with React and basic CSS, deployed with <a href="https://www.netlify.com/">Netlify.</a>
               </p>
             </footer>
           </main>

@@ -24,6 +24,7 @@
     display: list-item;
     text-align: -webkit-match-parent;
     list-style: none;
+    cursor: pointer;
 }
 
 .nav-item-normal {

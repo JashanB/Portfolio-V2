@@ -115,10 +115,19 @@ function App() {
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>About</h2>
               </div>
-              <div>
-                <p>About para 1</p>
-                <p>About para 2</p>
-                <p>About para 3</p>
+              <div className='about'>
+                {/* <p className='about-p-1'>I recently graduated from <a href='https://www.schulich.uwo.ca/index.html'>Schulich School of Medicine</a></p> */}
+                {/* <p className='about-p-1'>I had my first introduction to Web Development in 2019, after I took a break from Medical School at the <a href='https://www.schulich.uwo.ca/index.html'>Schulich School of Medicine</a>.
+                Web Development was a very new experience where I could leverage my creativity along with the problem solving skills I developed in Medical School. I had such an
+                amazing time working across different teams, but decided to be responsible and complete my MD degree.</p> */}
+                 <p className='about-p-1'>My first real exposure to Web Development was through a bootcamp at <a>Lighthouse Labs</a> in 2019. I had just taken a break from Medical School at 
+                 <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and even though it was daunting to enter a completely new area, I had so much fun being creative and designing real-life things.
+                 </p>
+                <p className='about-p-1'>Along my coding journey I've had the privelage to work with 1 large company where I re-designed their automation system, and a startup where I was the lead developer of their new sales website.
+                I've also had lots of fun participating in extracurricular Coding such as hackathons where I made things like a <a>Chrome Extension</a>, or testing my skills on <a>Code Wars.</a>
+                Web development was a great fit for me but I decided to be responsible and finish my MD degree in 2023.</p>
+                <p className='about-p-2'>I recently graduated  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> with a MD, and I'm so excited to be
+                back designing things I'm passionate about. I also like to keep busy by hiking, doing yoga, and beating my friends in video games.</p>
               </div>
             </Element>
             <Element name="experience" className='section'>

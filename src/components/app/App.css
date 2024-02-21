@@ -160,7 +160,8 @@
 .about p a {
   text-decoration: none;
   font-weight: 500;
-  color: rgba(148, 163, 184, 1);
+  color: rgba(226, 232, 240, 1);
+  cursor: pointer;
 }
 
 .about p a:hover {

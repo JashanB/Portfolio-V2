@@ -76,11 +76,9 @@ function App() {
     color: 'rgba(94, 234, 211, 0.9)'
   }
 
-  //add scroll to for nav
-  //add when screen is at section, trigger on hover for that nav part
+  
   //fix inset for publications
   //add resume
-  //add footer 
   //add code woars
 
   return (

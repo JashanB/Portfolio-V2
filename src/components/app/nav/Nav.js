@@ -32,6 +32,8 @@ export default function Nav(props) {
         console.log('set active', to)
         if (!isNavigationClick) {
             setActiveSection(state => to);
+            setHoveredNav(state => null);
+
         };
     }
 
@@ -69,7 +71,7 @@ export default function Nav(props) {
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>
-                <li className={hoveredNav === 1 ? "hovered-nav-item" : "nav-item-normal"}
+                <li className={selectedNavItem('about') ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav('about')}
                     onMouseLeave={() => moveOffNav('about')}
 
@@ -79,7 +81,7 @@ export default function Nav(props) {
                         <span className={selectedNavItem('about') ? "nav-text-elongate" : "nav-text-normal"}>About</span>
                     </Link>
                 </li>
-                <li className={hoveredNav === 2 ? "hovered-nav-item" : "nav-item-normal"}
+                <li className={selectedNavItem('experience') ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav('experience')}
                     onMouseLeave={() => moveOffNav('experience')}
                 >
@@ -88,7 +90,7 @@ export default function Nav(props) {
                         <span className={selectedNavItem('experience') ? "nav-text-elongate" : "nav-text-normal"}>Experience</span>
                     </Link>
                 </li>
-                <li className={hoveredNav === 3 ? "hovered-nav-item" : "nav-item-normal"}
+                <li className={selectedNavItem('projects') ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav('projects')}
                     onMouseLeave={() => moveOffNav('projects')}
                 >
@@ -97,7 +99,7 @@ export default function Nav(props) {
                         <span className={selectedNavItem('projects') ? "nav-text-elongate" : "nav-text-normal"}>Projects</span>
                     </Link>
                 </li>
-                <li className={hoveredNav === 4 ? "hovered-nav-item" : "nav-item-normal"}
+                <li className={selectedNavItem('publications') ? "hovered-nav-item" : "nav-item-normal"}
                     onMouseEnter={() => hoverNav('publications')}
                     onMouseLeave={() => moveOffNav('publications')}
                 >

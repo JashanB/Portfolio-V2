@@ -39,6 +39,14 @@ export default function Nav(props) {
         }
     }
 
+    function handleLinkClick (section) {
+        setIsNavigationClick(true);
+        setTimeout(() => {
+          setIsNavigationClick(false);
+        }, 500);
+        handleSetActive(section)
+      };
+
     useEffect(() => {
         handleSetActive('about')
     }, [])
@@ -51,7 +59,7 @@ export default function Nav(props) {
                     onMouseLeave={() => moveOffNav('about')}
 
                 >
-                    <Link spy={true} smooth={true} offset={-100} duration={500} to="about" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive}>
+                    <Link spy={true} smooth={true} offset={-100} duration={500} to="about" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('about')}>
                         <span className={selectedNavItem('about') ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={selectedNavItem('about') ? "nav-text-elongate" : "nav-text-normal"}>About</span>
                     </Link>

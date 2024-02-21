@@ -76,8 +76,6 @@ function App() {
     color: 'rgba(94, 234, 211, 0.9)'
   }
 
-
-  //fix inset for publications
   //add resume
   //add code woars
 
@@ -337,27 +335,6 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                  {/* <li className='list-item'>
-                    <div className='list-item-grid'>
-                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>Nov 2020 - June 2021</header>
-                      <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
-                        <p>Conceptualized, designed, and developed a robust sales website from the ground up which featured over 25,000 products.
-                          Collaborated closely with a team of graphic designers to translate their vision into an engaging user interface.
-                          Demonstrated exceptional teamwork and communication skills throughout the project, ensuring seamless coordination between different teams.</p>
-                        <ul className='tech-stack-flex-box'>
-                          <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
-                          <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
-                          <li className='tech-item'><div className="tech-item-div">React</div></li>
-                          <li className='tech-item'><div className="tech-item-div">Google Cloud</div></li>
-                          <li className='tech-item'><div className="tech-item-div">AWS</div></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li> */}
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
@@ -368,37 +345,6 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  {/* <li className='list-item'>
-                    <div className='list-item-grid'>
-                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>International Journal of Stroke (2016)</span></h3>
-                        <p>Technological Trends in Stroke Rehabilitation for Motor Function Recovery (Vol 11 Pg 68-68).</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className='list-item'>
-                    <div className='list-item-grid'>
-                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
-                        <h3 className='list-item-header'><span>Archives of Physical Medicine and Rehabilitation (2016)</span></h3>
-                        <p>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className='list-item'>
-                    <div className='list-item-grid'>
-                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
-                        <h3 className='list-item-header'><span>Evidence-Based Review of Stroke Rehabilitation (2016)</span></h3>
-                        <p>Chapter 13: Perceptual Disorders. Evidence-Based Review of Stroke Rehabilitation. Chapter 21: The Rehabilitation of Younger Stroke Patients. Evidence-Based Review of Stroke Rehabilitation. Chapter 14: Aphasia and Apraxia. Evidence-Based Review of Stroke Rehabilitation.</p>
-                      </div>
-                    </div>
-
-                  </li>
-                   */}
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
@@ -502,19 +448,6 @@ function App() {
       </div>
     </div>
   );
-  // return (
-  //   <div className="App">
-  //     <div className='body'>
-  //       <header>Jashan Brar</header>
-  //       <div className='start-div'>
-  //         <img src={start} className='start-here' alt="my-star" onClick={() => modalClick()}></img>
-  //       </div>
-  //     </div>
-  //     <div className={modal}>
-  //       <div className='modal-body'></div>
-  //     </div>
-  //   </div>
-  // );
 }
 
 export default App;

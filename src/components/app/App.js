@@ -337,16 +337,38 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
+                {/* <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Nov 2020 - June 2021</header>
+                      <div className='list-item-main'>
+                        <h3 className='list-item-header'><span>Full Stack Developer &#183; Twenty Billion Neurons</span></h3>
+                        <p>Conceptualized, designed, and developed a robust sales website from the ground up which featured over 25,000 products.
+                          Collaborated closely with a team of graphic designers to translate their vision into an engaging user interface.
+                          Demonstrated exceptional teamwork and communication skills throughout the project, ensuring seamless coordination between different teams.</p>
+                        <ul className='tech-stack-flex-box'>
+                          <li className='tech-item'><div className="tech-item-div">Javascript</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Ruby</div></li>
+                          <li className='tech-item'><div className="tech-item-div">HTML & CSS</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Ruby on Rails</div></li>
+                          <li className='tech-item'><div className="tech-item-div">React</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Google Cloud</div></li>
+                          <li className='tech-item'><div className="tech-item-div">AWS</div></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li> */}
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Dalhousie Research Day (2023)</header>
                       <div className='list-item-main'>
-                        <h3 className='list-item-header'><span>Dalhousie Research Day (2023)</span></h3>
-                        <p>Assessing Burnout in Medical Learners</p>
+                        <h3 className='list-item-header'><span></span>Assessing Burnout in Medical Learners</h3>
+                        <p>Brar T, Brar J</p>
                       </div>
                     </div>
                   </li>
-                  <li className='list-item'>
+                  {/* <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='list-item-main'>
@@ -362,6 +384,94 @@ function App() {
                         <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
                         <h3 className='list-item-header'><span>Archives of Physical Medicine and Rehabilitation (2016)</span></h3>
                         <p>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>Evidence-Based Review of Stroke Rehabilitation (2016)</span></h3>
+                        <p>Chapter 13: Perceptual Disorders. Evidence-Based Review of Stroke Rehabilitation. Chapter 21: The Rehabilitation of Younger Stroke Patients. Evidence-Based Review of Stroke Rehabilitation. Chapter 14: Aphasia and Apraxia. Evidence-Based Review of Stroke Rehabilitation.</p>
+                      </div>
+                    </div>
+
+                  </li>
+                   */}
+                     <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>International Journal of Stroke (2016)</header>
+                      <div className='list-item-main'>
+                        <h3 className='list-item-header'><span>Technological Trends in Stroke Rehabilitation for Motor Function Recovery (Vol 11 Pg 68-68)</span></h3>
+                        <p>Jinah A, Cotoi A, Alibrahm F, McIntyre A, Brar J, Teasell R</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Archives of Physical Medicine and Rehabilitation (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review</span></h3>
+                        <p>Cotoi A, Jinah A, Brar J</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>ACRM Annual Meeting (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>The efficacy of playing musical instruments for upper limb rehabilitation among individuals with stroke: A systematic review</span></h3>
+                        <p>Brar J, McIntyre A, Cotoi A, Jinah A, Iruthayarajah J, Vermeer J, Teasell R</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Canadian Stroke Congress (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>Technological trends in stroke rehabilitation for motor function recovery</span></h3>
+                        <p>Jinah A, Cotoi A, Alibrahm F, McIntyre A, Brar J, Teasell R</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>Canadian Stroke Congress (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>The state of stroke rehabilitation research</span></h3>
+                        <p>Cotoi A, McIntyre A, Brar J, Jinah A, Anderson R, Teasell R</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>GTA Rehab: Best Practices Day (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>A systematic review of the efficacy of telerehabilitation interventions available for individuals with stroke</span></h3>
+                        <p>Jinah A, Vermeer J, Allen L, Cotoi A, Brar J, McIntyre A, Teasell R</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item'>
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <header className='date-list-item'>GTA Rehab: Best Practices Day (2016)</header>
+                      <div className='list-item-main'>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <h3 className='list-item-header'><span>A systematic review of the efficacy of telerehabilitation interventions available for individuals with stroke</span></h3>
+                        <p>Jinah A, Vermeer J, Allen L, Cotoi A, Brar J, McIntyre A, Teasell R</p>
                       </div>
                     </div>
                   </li>

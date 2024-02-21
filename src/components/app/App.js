@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';

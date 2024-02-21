@@ -9,16 +9,8 @@ export default function Nav(props) {
     const [activeSection, setActiveSection] = useState(null);
     const [isNavigationClick, setIsNavigationClick] = useState(false);
 
-
-    const navObj = {
-        about: 1,
-        experience: 2,
-        projects: 3,
-        publications: 4
-    }
-
     function hoverNav(section) {
-        console.log('hover', section)
+        // console.log('hover', section)
         setHoveredNav(state => section);
     }
 
@@ -29,7 +21,7 @@ export default function Nav(props) {
     }
 
     function handleSetActive(to) {
-        console.log('set active', to)
+        // console.log('set active', to)
         if (!isNavigationClick) {
             setActiveSection(state => to);
             setHoveredNav(state => null);

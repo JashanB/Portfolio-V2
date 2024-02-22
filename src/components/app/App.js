@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+// import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Element } from 'react-scroll';
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';
@@ -52,7 +53,7 @@ function App() {
 
   useEffect(() => {
 
-    scrollSpy.update();
+    // scrollSpy.update();
 
     function handleResize() {
       setSmallScreen(state => window.innerWidth >= 1024);
@@ -122,7 +123,7 @@ function App() {
                 <p className='about-p-1'>Along my coding journey I've had the privelage to work with 1 large company where I re-designed their automation system, and a startup where I was the lead developer of their new sales website.
                 I've also had lots of fun participating in extracurricular coding such as hackathons where I made things like a <a href='https://github.com/JashanB/Mintbean-hackathon-number-guesser'>Chrome Extension</a>.
                 Web development was a great fit for me but I decided to be responsible and finish my MD degree in 2023.</p>
-                <p className='about-p-2'>I recently graduated  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> with a MD in the Summer of 2023, and I'm so excited to be
+                <p className='about-p-2'>I recently graduated  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and I'm so excited to be
                 back designing things I'm passionate about. I also like to keep busy with hiking, yoga, and beating my friends in video games.</p>
               </div>
             </Element>

@@ -77,75 +77,75 @@ function App() {
     stroke: "rgba(94, 234, 211, 0.9)",
     color: 'rgba(94, 234, 211, 0.9)'
   }
-//Nav functions
+  //Nav functions
   function hoverNav(section) {
     setHoveredNav(state => section);
-}
+  }
 
-function moveOffNav(section) {
+  function moveOffNav(section) {
     if (activeSection !== section) {
-        setHoveredNav(state => null);
+      setHoveredNav(state => null);
     }
-}
+  }
 
-const handleSetActive = useCallback((to) => {
+  const handleSetActive = useCallback((to) => {
     if (!isNavigationClick) {
-        setActiveSection(state => to);
-        setHoveredNav(state => null);
+      setActiveSection(state => to);
+      setHoveredNav(state => null);
     }
-}, [isNavigationClick, setActiveSection, setHoveredNav]);
+  }, [isNavigationClick, setActiveSection, setHoveredNav]);
 
-function selectedNavItem(section) {
+  function selectedNavItem(section) {
     if (activeSection === section || hoveredNav === section) {
-        return true;
+      return true;
     } else {
-        return false;
+      return false;
     }
-}
+  }
 
-function handleLinkClick(section) {
+  function handleLinkClick(section) {
     setIsNavigationClick(true);
     //Stop in between nav items being set to active as page scrolls by from nav bar click
     setTimeout(() => {
-        setIsNavigationClick(false);
+      setIsNavigationClick(false);
     }, 500);
     handleSetActive(section)
-};
+  };
 
-useEffect(() => {
+  useEffect(() => {
     //set about to active on page render 
     handleSetActive('about');
-}, [handleSetActive])
+  }, [handleSetActive])
 
-useEffect(() => {
-  // Function to handle scroll event
-  const handleScroll = debounce(() => {
-    const sections = document.querySelectorAll('.section');
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = debounce(() => {
+      const sections = document.querySelectorAll('.section');
 
-    let closestSection = null;
-    let minDistance = Infinity;
+      let closestSection = null;
+      let minDistance = Infinity;
 
-    sections.forEach((section) => {
+      sections.forEach((section) => {
         const { top } = section.getBoundingClientRect();
         const distance = Math.abs(top);
-        
+
         if (distance < minDistance) {
-            minDistance = distance;
-            closestSection = section.id; // Assuming your sections have unique IDs
+          minDistance = distance;
+          closestSection = section.id; // Assuming your sections have unique IDs
         }
-    });
+      });
 
-    handleSetActive(closestSection);
-}, 100);
+      handleSetActive(closestSection);
+    }, 100);
 
-  // Add scroll event listener when the component mounts
-  window.addEventListener('scroll', handleScroll);
+    // Add scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
 
-  // Clean up the event listener when the component unmounts
-  return () => {
+    // Clean up the event listener when the component unmounts
+    return () => {
       window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -158,12 +158,12 @@ useEffect(() => {
               <h2>Full Stack Developer</h2>
               <p>I build efficient and scaleable digital experiences</p>
               {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
-              <Nav smallScreen={smallScreen} 
-              handleSetActive={handleSetActive}
-              handleLinkClick={handleLinkClick}
-              selectedNavItem={selectedNavItem}
-              hoverNav={hoverNav}
-              moveOffNav={moveOffNav}
+              <Nav smallScreen={smallScreen}
+                handleSetActive={handleSetActive}
+                handleLinkClick={handleLinkClick}
+                selectedNavItem={selectedNavItem}
+                hoverNav={hoverNav}
+                moveOffNav={moveOffNav}
               />
             </div>
             <ul className='external-links'>
@@ -189,14 +189,14 @@ useEffect(() => {
                 <h2>About</h2>
               </div>
               <div className='about'>
-                 <p className='about-p-1'>My first real exposure to Web Development was through a bootcamp at <a href='https://www.lighthouselabs.ca/'>Lighthouse Labs</a> in 2019. I had just taken a break from Medical School at 
-                 <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and even though it was daunting to enter a completely new area, I had so much fun being creative and designing real-life things.
-                 </p>
+                <p className='about-p-1'>My first real exposure to Web Development was through a bootcamp at <a href='https://www.lighthouselabs.ca/'>Lighthouse Labs</a> in 2019. I had just taken a break from Medical School at
+                  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and even though it was daunting to enter a completely new area, I had so much fun being creative and designing real-life things.
+                </p>
                 <p className='about-p-1'>Along my coding journey I've had the privelage to work with 1 large company where I re-designed their automation system, and a startup where I was the lead developer of their new sales website.
-                I've also had lots of fun participating in extracurricular coding such as hackathons where I made things like a <a href='https://github.com/JashanB/Mintbean-hackathon-number-guesser'>Chrome Extension</a>.
-                Web development was a great fit for me but I decided to be responsible and finish my MD degree in 2023.</p>
+                  I've also had lots of fun participating in extracurricular coding such as hackathons where I made things like a <a href='https://github.com/JashanB/Mintbean-hackathon-number-guesser'>Chrome Extension</a>.
+                  Web development was a great fit for me but I decided to be responsible and finish my MD degree in 2023.</p>
                 <p className='about-p-2'>I recently graduated  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and I'm so excited to be
-                back designing things I'm passionate about. I also like to keep busy with hiking, yoga, and beating my friends in video games.</p>
+                  back designing things I'm passionate about. I also like to keep busy with hiking, yoga, and beating my friends in video games.</p>
               </div>
             </Element>
             <Element name="experience" className='section' id="experience">
@@ -438,8 +438,8 @@ useEffect(() => {
                       <header className='date-list-item'>Archives of Physical Medicine and Rehabilitation (2016)</header>
                       <div className='list-item-main'>
                         <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext">
-                        <h3 className='list-item-header'><span>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review</span></h3>
-                        <p>Cotoi A, Jinah A, Brar J</p>
+                          <h3 className='list-item-header'><span>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review</span></h3>
+                          <p>Cotoi A, Jinah A, Brar J</p>
                         </a>
                       </div>
                     </div>

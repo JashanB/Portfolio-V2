@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-scroll';
+import { debounce } from 'lodash'
 import './Nav.css';
 
 export default function Nav(props) {
@@ -17,13 +18,6 @@ export default function Nav(props) {
         }
     }
 
-    // function handleSetActive(to) {
-    //     if (!isNavigationClick) {
-    //         //Can only be hovered or scroll active not both
-    //         setActiveSection(state => to);
-    //         setHoveredNav(state => null);
-    //     };
-    // }
     const handleSetActive = useCallback((to) => {
         if (!isNavigationClick) {
             setActiveSection(state => to);
@@ -52,6 +46,23 @@ export default function Nav(props) {
         //set about to active on page render 
         handleSetActive('about');
     }, [handleSetActive])
+
+    useEffect(() => {
+        // Function to handle scroll event
+        const handleScroll = debounce(() => {
+            // Calculate which section is currently in view
+            // Update setActiveSection accordingly
+            // You can use a similar logic to what you have in handleSetActive
+        }, 100); 
+
+        // Add scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>

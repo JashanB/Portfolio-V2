@@ -157,7 +157,13 @@ useEffect(() => {
               <h2>Full Stack Developer</h2>
               <p>I build efficient and scaleable digital experiences</p>
               {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
-              <Nav smallScreen={smallScreen} />
+              <Nav smallScreen={smallScreen} 
+              handleSetActive={handleSetActive}
+              handleLinkClick={handleLinkClick}
+              selectedNavItem={selectedNavItem}
+              hoverNav={hoverNav}
+              moveOffNav={moveOffNav}
+              />
             </div>
             <ul className='external-links'>
               <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span>

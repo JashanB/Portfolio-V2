@@ -18,8 +18,12 @@ function App() {
     resume: false,
     github: false
   })
-  //***********FUNCTIONS***********
+  //Navigation states
+  const [hoveredNav, setHoveredNav] = useState(null);
+  const [activeSection, setActiveSection] = useState(null);
+  const [isNavigationClick, setIsNavigationClick] = useState(false);
 
+  //***********FUNCTIONS***********
   //trigger css changes on hovering items
   function setObjHovered(section) {
     setHoveredObj((state) => {
@@ -72,6 +76,75 @@ function App() {
     stroke: "rgba(94, 234, 211, 0.9)",
     color: 'rgba(94, 234, 211, 0.9)'
   }
+//Nav functions
+  function hoverNav(section) {
+    setHoveredNav(state => section);
+}
+
+function moveOffNav(section) {
+    if (activeSection !== section) {
+        setHoveredNav(state => null);
+    }
+}
+
+const handleSetActive = useCallback((to) => {
+    if (!isNavigationClick) {
+        setActiveSection(state => to);
+        setHoveredNav(state => null);
+    }
+}, [isNavigationClick, setActiveSection, setHoveredNav]);
+
+function selectedNavItem(section) {
+    if (activeSection === section || hoveredNav === section) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function handleLinkClick(section) {
+    setIsNavigationClick(true);
+    //Stop in between nav items being set to active as page scrolls by from nav bar click
+    setTimeout(() => {
+        setIsNavigationClick(false);
+    }, 500);
+    handleSetActive(section)
+};
+
+useEffect(() => {
+    //set about to active on page render 
+    handleSetActive('about');
+}, [handleSetActive])
+
+useEffect(() => {
+  // Function to handle scroll event
+  const handleScroll = debounce(() => {
+    const sections = document.querySelectorAll('.section');
+
+    let closestSection = null;
+    let minDistance = Infinity;
+
+    sections.forEach((section) => {
+        const { top } = section.getBoundingClientRect();
+        const distance = Math.abs(top);
+        
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.id; // Assuming your sections have unique IDs
+        }
+    });
+
+    handleSetActive(closestSection);
+}, 100);
+
+  // Add scroll event listener when the component mounts
+  window.addEventListener('scroll', handleScroll);
+
+  // Clean up the event listener when the component unmounts
+  return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
   return (
     <div className="App">

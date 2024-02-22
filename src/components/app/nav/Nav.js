@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import debounce from 'lodash/debounce';
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import './Nav.css';
 
 
@@ -10,7 +9,6 @@ export default function Nav(props) {
     const [isNavigationClick, setIsNavigationClick] = useState(false);
 
     function hoverNav(section) {
-        // console.log('hover', section)
         setHoveredNav(state => section);
     }
 
@@ -21,8 +19,8 @@ export default function Nav(props) {
     }
 
     function handleSetActive(to) {
-        // console.log('set active', to)
         if (!isNavigationClick) {
+            //Can only be hovered or scroll active not both
             setActiveSection(state => to);
             setHoveredNav(state => null);
 
@@ -36,9 +34,10 @@ export default function Nav(props) {
             return false;
         }
     }
-
+    
     function handleLinkClick (section) {
         setIsNavigationClick(true);
+        //Stop in between nav items being set to active as page scrolls by from nav bar click
         setTimeout(() => {
           setIsNavigationClick(false);
         }, 500);
@@ -46,20 +45,10 @@ export default function Nav(props) {
       };
       
     useEffect(() => {
+        //set about to active on page render 
         handleSetActive('about');
-        // const handleScroll = debounce(() => {
-        //     // Logic to determine active section based on scroll position
-        //     // Update setActiveSection accordingly
-        //   }, 100); // Adjust debounce delay as needed
-      
-        //   window.addEventListener('scroll', handleScroll);
-      
-        //   return () => {
-        //     window.removeEventListener('scroll', handleScroll);
-        //   };
-      
     }, [])
-    //Nav bugs: clicking nav item causes it tob e hovered permenentaly as page is scrolled
+
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>
@@ -95,7 +84,7 @@ export default function Nav(props) {
                     onMouseEnter={() => hoverNav('publications')}
                     onMouseLeave={() => moveOffNav('publications')}
                 >
-                    <Link spy={true} smooth={true} offset={0} duration={500} to="publications" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('publications')}>
+                    <Link spy={true} smooth={true} offset={-50} duration={500} to="publications" activeClass="active" className='flex-nav-center' onSetActive={handleSetActive} onClick={() => handleLinkClick('publications')}>
                         <span className={selectedNavItem('publications') ? "nav-line-elongate" : "nav-line-normal"}></span>
                         <span className={selectedNavItem('publications') ? "nav-text-elongate" : "nav-text-normal"}>Publications</span>
                     </Link>

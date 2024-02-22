@@ -47,23 +47,6 @@ export default function Nav(props) {
         handleSetActive('about');
     }, [handleSetActive])
 
-    useEffect(() => {
-        // Function to handle scroll event
-        const handleScroll = debounce(() => {
-            // Calculate which section is currently in view
-            // Update setActiveSection accordingly
-            // You can use a similar logic to what you have in handleSetActive
-        }, 100); 
-
-        // Add scroll event listener when the component mounts
-        window.addEventListener('scroll', handleScroll);
-
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>

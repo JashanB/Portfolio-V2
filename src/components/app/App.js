@@ -93,7 +93,7 @@ function App() {
     //   setActiveSection(state => to);
     //   setHoveredNav(state => null);
     // }
-    console.log('set active', to)
+    // console.log('set active', to)
     if (!isNavigationClick) {
       // Check if the clicked section is not the about section or if the current active section is not about
       if (to !== 'about' || activeSection !== 'about') {
@@ -120,13 +120,18 @@ function App() {
     handleSetActive(section)
   };
 
+  // useEffect(() => {
+  //   //set about to active on page render 
+  //   console.log('useeffect called')
+  //   if (!isNavigationClick) {
+  //     handleSetActive('about');
+  //   }
+  // }, [handleSetActive])
+
   useEffect(() => {
     //set about to active on page render 
-    console.log('useeffect called')
-    if (!isNavigationClick) {
-      handleSetActive('about');
-    }
-  }, [handleSetActive])
+      setActiveSection('about');
+  }, [])
 
   useEffect(() => {
     // Function to handle scroll event
@@ -157,7 +162,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleSetActive, isNavigationClick]);
 
   return (
     <div className="App">

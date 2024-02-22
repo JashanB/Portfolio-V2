@@ -45,14 +45,11 @@ function App() {
   }
 
   function handleNavigate(destination) {
-    // navigate(`${destination}`);
     window.location.href = destination;
   }
 
   //trigger state change at 1024 px
-
   useEffect(() => {
-
     // scrollSpy.update();
 
     function handleResize() {
@@ -77,13 +74,9 @@ function App() {
     color: 'rgba(94, 234, 211, 0.9)'
   }
 
-  //add resume
-  //add code woars
-
   return (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
-      {/* <div className='app-insert'></div> */}
       <div className='container'>
         <div className='body'>
           <header className='header'>

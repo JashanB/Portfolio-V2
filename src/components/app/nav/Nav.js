@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Nav.css';
 
-
 export default function Nav(props) {
     const [hoveredNav, setHoveredNav] = useState(null);
     const [activeSection, setActiveSection] = useState(null);

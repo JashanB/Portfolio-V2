@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 import './Nav.css';
 
 
@@ -47,7 +47,7 @@ export default function Nav(props) {
     useEffect(() => {
         //set about to active on page render 
         handleSetActive('about');
-    }, [])
+    })
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>

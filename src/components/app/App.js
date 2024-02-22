@@ -98,14 +98,14 @@ function App() {
               <li><a href='https://github.com/jashanb' className='external-links-link'><span>Github</span>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <foreignObject width="24" height="24">
-                    <img src={github} alt="Image" width="100%" height="100%" />
+                    <img src={github} alt="github" width="100%" height="100%" />
                   </foreignObject>
                 </svg>
               </a></li>
               <li><a href='https://www.linkedin.com/in/jashan-brar/' className='external-links-link'><span>LinkedIn</span>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <foreignObject width="24" height="24">
-                    <img src={linkedin} alt="Image" width="100%" height="100%" />
+                    <img src={linkedin} alt="linkedin" width="100%" height="100%" />
                   </foreignObject>
                 </svg>
               </a></li>
@@ -318,7 +318,7 @@ function App() {
                   </li>
                 </ul>
                 <div className='resume-div' onMouseEnter={() => setObjHovered('github')} onMouseLeave={setOffObjHovered}>
-                  <a className="resume-link" href="" style={hoveredObj['github'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                  <a className="resume-link" href="https://github.com/JashanB" style={hoveredObj['github'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                     <span className='resume-span' color={hoveredObj['github'] ? hoveredStyle.color : linkStyle.color}>Check out my latest projects on Github
                       <svg
                         className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['github'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['github'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">

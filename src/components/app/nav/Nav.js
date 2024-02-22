@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import './Nav.css';
 
 export default function Nav(props) {
+    
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>

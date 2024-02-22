@@ -93,7 +93,7 @@ function App() {
         setHoveredNav(state => null);
       }
     }
-  }, [isNavigationClick, setActiveSection, setHoveredNav]);
+  }, [isNavigationClick, setActiveSection, setHoveredNav, activeSection]);
 
   function selectedNavItem(section) {
     if (activeSection === section || hoveredNav === section) {

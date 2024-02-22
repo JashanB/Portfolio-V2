@@ -142,14 +142,15 @@ function App() {
       let minDistance = Infinity;
 
       sections.forEach((section) => {
-        const { top } = section.getBoundingClientRect();
+        const { top, height } = section.getBoundingClientRect();
         const distance = Math.abs(top);
+        const isVisible = distance < height / 2; // Check if more than 50% visible
 
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestSection = section.id;
+        if (isVisible && distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.id;
         }
-      });
+    });
       if (!isNavigationClick) {
         handleSetActive(closestSection);
       }

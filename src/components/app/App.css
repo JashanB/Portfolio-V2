@@ -300,6 +300,10 @@
   color: rgb(148 163 184);
 }
 
+.list-item-main a {
+  text-decoration: none;
+}
+
 .tech-stack-flex-box {
   display: flex;
   flex-wrap: wrap;

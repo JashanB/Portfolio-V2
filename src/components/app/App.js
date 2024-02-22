@@ -84,7 +84,7 @@ function App() {
       setHoveredNav(state => null);
     }
   }
-
+  //handle page scrolling to activate nav item
   const handleSetActive = useCallback((to) => {
     if (!isNavigationClick) {
       // Check if the clicked section is not the about section or if the current active section is not about

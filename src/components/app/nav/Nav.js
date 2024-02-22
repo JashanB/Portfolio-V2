@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-scroll';
 import './Nav.css';
 
@@ -17,14 +17,19 @@ export default function Nav(props) {
         }
     }
 
-    function handleSetActive(to) {
+    // function handleSetActive(to) {
+    //     if (!isNavigationClick) {
+    //         //Can only be hovered or scroll active not both
+    //         setActiveSection(state => to);
+    //         setHoveredNav(state => null);
+    //     };
+    // }
+    const handleSetActive = useCallback((to) => {
         if (!isNavigationClick) {
-            //Can only be hovered or scroll active not both
             setActiveSection(state => to);
             setHoveredNav(state => null);
-
-        };
-    }
+        }
+    }, [isNavigationClick, setActiveSection, setHoveredNav]);
 
     function selectedNavItem(section) {
         if (activeSection === section || hoveredNav === section) {
@@ -33,20 +38,20 @@ export default function Nav(props) {
             return false;
         }
     }
-    
-    function handleLinkClick (section) {
+
+    function handleLinkClick(section) {
         setIsNavigationClick(true);
         //Stop in between nav items being set to active as page scrolls by from nav bar click
         setTimeout(() => {
-          setIsNavigationClick(false);
+            setIsNavigationClick(false);
         }, 500);
         handleSetActive(section)
-      };
-      
+    };
+
     useEffect(() => {
         //set about to active on page render 
         handleSetActive('about');
-    })
+    }, [handleSetActive])
 
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>

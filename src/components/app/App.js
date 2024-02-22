@@ -34,7 +34,6 @@ function App() {
       }
     })
   }
-
   //revert css hover changes to standard
   function setOffObjHovered() {
     setHoveredObj((state) => {
@@ -54,8 +53,6 @@ function App() {
 
   //trigger state change at 1024 px
   useEffect(() => {
-    // scrollSpy.update();
-
     function handleResize() {
       setSmallScreen(state => window.innerWidth >= 1024);
     }
@@ -89,11 +86,6 @@ function App() {
   }
 
   const handleSetActive = useCallback((to) => {
-    // if (!isNavigationClick) {
-    //   setActiveSection(state => to);
-    //   setHoveredNav(state => null);
-    // }
-    // console.log('set active', to)
     if (!isNavigationClick) {
       // Check if the clicked section is not the about section or if the current active section is not about
       if (to !== 'about' || activeSection !== 'about') {
@@ -120,14 +112,6 @@ function App() {
     handleSetActive(section)
   };
 
-  // useEffect(() => {
-  //   //set about to active on page render 
-  //   console.log('useeffect called')
-  //   if (!isNavigationClick) {
-  //     handleSetActive('about');
-  //   }
-  // }, [handleSetActive])
-
   useEffect(() => {
     //set about to active on page render 
       setActiveSection('about');
@@ -145,7 +129,7 @@ function App() {
         const { top, height } = section.getBoundingClientRect();
         const distance = Math.abs(top);
         const isVisible = distance < height / 2; // Check if more than 50% visible
-
+        
         if (isVisible && distance < minDistance) {
             minDistance = distance;
             closestSection = section.id;
@@ -155,10 +139,8 @@ function App() {
         handleSetActive(closestSection);
       }
     }, 100);
-
     // Add scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
-
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -175,7 +157,6 @@ function App() {
               <h1>Jashan Brar</h1>
               <h2>Full Stack Developer</h2>
               <p>I build efficient and scaleable digital experiences</p>
-              {/* Classname for nav to be changed depending on media dimensions - erase at below certain threshold*/}
               <Nav smallScreen={smallScreen}
                 handleSetActive={handleSetActive}
                 handleLinkClick={handleLinkClick}
@@ -222,11 +203,9 @@ function App() {
                 <h2>Experience</h2>
               </div>
               <div>
-                {/* <div className='experience-container'> */}
                 <ol className='group-list'>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                      {/*Around list item, greater than dimensions, show on hover, hide on <1024px*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Nov 2020 - June 2021</header>
                       <div className='list-item-main'>
@@ -248,7 +227,6 @@ function App() {
                   </li>
                   <li className='list-item'>
                     <div className='list-item-grid'>
-                      {/*Around list item, greater than dimensions, show on hover*/}
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Mar 2019 - Nov 2020</header>
                       <div className='list-item-main'>
@@ -282,7 +260,6 @@ function App() {
               </div>
             </Element>
             <Element name="projects" className='section' id="projects">
-              {/*only show div with media dimensions <1024 - opacity to 0*/}
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Projects</h2>
               </div>
@@ -424,7 +401,6 @@ function App() {
               </div>
             </Element>
             <Element name="publications" className='section' id="publications">
-              {/*only show div with media dimensions <1024 - opacity to 0*/}
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Publications</h2>
               </div>

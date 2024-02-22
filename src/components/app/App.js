@@ -89,9 +89,17 @@ function App() {
   }
 
   const handleSetActive = useCallback((to) => {
+    // if (!isNavigationClick) {
+    //   setActiveSection(state => to);
+    //   setHoveredNav(state => null);
+    // }
+    console.log('set active', to)
     if (!isNavigationClick) {
-      setActiveSection(state => to);
-      setHoveredNav(state => null);
+      // Check if the clicked section is not the about section or if the current active section is not about
+      if (to !== 'about' || activeSection !== 'about') {
+        setActiveSection(state => to);
+        setHoveredNav(state => null);
+      }
     }
   }, [isNavigationClick, setActiveSection, setHoveredNav]);
 
@@ -114,7 +122,10 @@ function App() {
 
   useEffect(() => {
     //set about to active on page render 
-    handleSetActive('about');
+    console.log('useeffect called')
+    if (!isNavigationClick) {
+      handleSetActive('about');
+    }
   }, [handleSetActive])
 
   useEffect(() => {
@@ -131,11 +142,12 @@ function App() {
 
         if (distance < minDistance) {
           minDistance = distance;
-          closestSection = section.id; // Assuming your sections have unique IDs
+          closestSection = section.id;
         }
       });
-
-      handleSetActive(closestSection);
+      if (!isNavigationClick) {
+        handleSetActive(closestSection);
+      }
     }, 100);
 
     // Add scroll event listener when the component mounts

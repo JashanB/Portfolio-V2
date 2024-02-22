@@ -365,9 +365,10 @@ function App() {
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <header className='date-list-item'>Archives of Physical Medicine and Rehabilitation (2016)</header>
                       <div className='list-item-main'>
-                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext"></a>
+                        <a href="https://www.archives-pmr.org/article/S0003-9993(16)30883-8/fulltext">
                         <h3 className='list-item-header'><span>Using Theta Burst Stimulation (TBS) to Improve Upper Limb Motor Function Following a Stroke: A Systematic Review</span></h3>
                         <p>Cotoi A, Jinah A, Brar J</p>
+                        </a>
                       </div>
                     </div>
                   </li>
@@ -434,7 +435,7 @@ function App() {
                   <li className='list-item'>
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
-                      <header className='date-list-item'>Evidence-Based Review of Stroke Rehabilitation (2016)</header>
+                      <header className='date-list-item'>Evidence-Based Review of Stroke Rehabilitation 18th Edition (2016)</header>
                       <div className='list-item-main'>
                         <h3 className='list-item-header'><span>Chapters 13, 14, 21 of the Evidence-Based Review of Stroke Rehabilitation</span></h3>
                       </div>

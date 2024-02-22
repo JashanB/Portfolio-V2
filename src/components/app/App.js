@@ -104,7 +104,7 @@ function App() {
             </ul>
           </header>
           <main className='content'>
-            <Element name="about" className='section' id="section">
+            <Element name="about" className='section' id="about">
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>About</h2>
               </div>
@@ -119,7 +119,7 @@ function App() {
                 back designing things I'm passionate about. I also like to keep busy with hiking, yoga, and beating my friends in video games.</p>
               </div>
             </Element>
-            <Element name="experience" className='section' id="section">
+            <Element name="experience" className='section' id="experience">
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Experience</h2>
               </div>
@@ -183,7 +183,7 @@ function App() {
                 </div>
               </div>
             </Element>
-            <Element name="projects" className='section' id="section">
+            <Element name="projects" className='section' id="projects">
               {/*only show div with media dimensions <1024 - opacity to 0*/}
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Projects</h2>
@@ -325,7 +325,7 @@ function App() {
                 </div>
               </div>
             </Element>
-            <Element name="publications" className='section' id="section">
+            <Element name="publications" className='section' id="publications">
               {/*only show div with media dimensions <1024 - opacity to 0*/}
               <div className={!smallScreen ? "content-div-visible" : "content-div-hidden"}>
                 <h2>Publications</h2>

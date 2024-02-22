@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Element } from 'react-scroll';
+import { debounce } from 'lodash'
 import Nav from './nav';
 import github from './github.png';
 import linkedin from './linkedin.png';

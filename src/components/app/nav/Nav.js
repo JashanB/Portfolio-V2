@@ -1,52 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
-import { debounce } from 'lodash'
 import './Nav.css';
 
 export default function Nav(props) {
-    // const [hoveredNav, setHoveredNav] = useState(null);
-    // const [activeSection, setActiveSection] = useState(null);
-    // const [isNavigationClick, setIsNavigationClick] = useState(false);
-
-    // function hoverNav(section) {
-    //     setHoveredNav(state => section);
-    // }
-
-    // function moveOffNav(section) {
-    //     if (activeSection !== section) {
-    //         setHoveredNav(state => null);
-    //     }
-    // }
-
-    // const handleSetActive = useCallback((to) => {
-    //     if (!isNavigationClick) {
-    //         setActiveSection(state => to);
-    //         setHoveredNav(state => null);
-    //     }
-    // }, [isNavigationClick, setActiveSection, setHoveredNav]);
-
-    // function selectedNavItem(section) {
-    //     if (activeSection === section || hoveredNav === section) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
-
-    // function handleLinkClick(section) {
-    //     setIsNavigationClick(true);
-    //     //Stop in between nav items being set to active as page scrolls by from nav bar click
-    //     setTimeout(() => {
-    //         setIsNavigationClick(false);
-    //     }, 500);
-    //     handleSetActive(section)
-    // };
-
-    // useEffect(() => {
-    //     //set about to active on page render 
-    //     handleSetActive('about');
-    // }, [handleSetActive])
-
     return (
         <nav className={!props.smallScreen ? "nav-hidden" : "nav-open"}>
             <ul className='nav-ul'>

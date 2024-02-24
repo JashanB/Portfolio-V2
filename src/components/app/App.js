@@ -129,13 +129,8 @@ function App() {
         const { top, height } = section.getBoundingClientRect();
         const distance = Math.abs(top);
         let isVisible = distance < height / 2; // Check if more than 50% visible
-        console.log(section)
-        console.log('is Vis?', isVisible)
-        console.log('distance', distance)
-        console.log('height', height)
-        console.log('math', height/2)
-        console.log('min dis', minDistance)
 
+        //handle edge case of publications length and being last section
         if (section.id === 'publications' && distance > 696.5) {
           isVisible = true;
         }

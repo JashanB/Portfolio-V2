@@ -129,7 +129,12 @@ function App() {
         const { top, height } = section.getBoundingClientRect();
         const distance = Math.abs(top);
         const isVisible = distance < height / 2; // Check if more than 50% visible
-        
+        console.log(section)
+        console.log('is Vis?', isVisible)
+        console.log('distance', distance)
+        console.log('height', height)
+        console.log('math', )
+        console.log('min dis', minDistance)
         if (isVisible && distance < minDistance) {
             minDistance = distance;
             closestSection = section.id;

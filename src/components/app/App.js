@@ -128,18 +128,23 @@ function App() {
       sections.forEach((section) => {
         const { top, height } = section.getBoundingClientRect();
         const distance = Math.abs(top);
-        const isVisible = distance < height / 2; // Check if more than 50% visible
+        let isVisible = distance < height / 2; // Check if more than 50% visible
         console.log(section)
         console.log('is Vis?', isVisible)
         console.log('distance', distance)
         console.log('height', height)
-        console.log('math', )
+        console.log('math', height/2)
         console.log('min dis', minDistance)
-        
+
+        if (section.id === 'publications' && distance > 696.5) {
+          isVisible = true;
+        }
+
         if (isVisible && distance < minDistance) {
             minDistance = distance;
             closestSection = section.id;
         }
+
     });
       if (!isNavigationClick) {
         handleSetActive(closestSection);
@@ -147,7 +152,7 @@ function App() {
     }, 100);
     // Add scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
-    // Clean up the event listener when the component unmounts
+    // Clean up the event listener when the component unmounts  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

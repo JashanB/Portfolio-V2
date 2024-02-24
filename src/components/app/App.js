@@ -135,6 +135,7 @@ function App() {
         console.log('height', height)
         console.log('math', )
         console.log('min dis', minDistance)
+        
         if (isVisible && distance < minDistance) {
             minDistance = distance;
             closestSection = section.id;

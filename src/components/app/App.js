@@ -9,6 +9,7 @@ import linkedin from './linkedin.png';
 import newton from "./Newton1.png";
 import weather from './weather.png';
 import bettr from './bettr.png';
+import spotify from './og.png';
 
 function App() {
   const [smallScreen, setSmallScreen] = useState(false);
@@ -279,7 +280,7 @@ function App() {
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{
-                        backgroundImage: `url(${bettr})`,
+                        backgroundImage: `url(${spotify})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         width: '100%',
@@ -298,7 +299,8 @@ function App() {
                               </g>
                             </svg>
                           </span></a>
-                        <p>A web app to check details about your spotify profile. View top artists and tracks based on a selectable range of time and sort tracks by unique features such as energy and danceability.</p>
+                        <p>A fully deployed web app to check details about your spotify profile. View top artists and tracks based on a selectable 
+                          range of time and sort tracks by unique features such as energy and danceability.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>
                           <li className='tech-item'><div className="tech-item-div">Express</div></li>

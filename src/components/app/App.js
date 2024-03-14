@@ -564,8 +564,8 @@ function App() {
               </div>
             </Element>
             <footer className='footer'>
-              <p>Design by <a href="https://brittanychiang.com/">Brittany Chiang,</a> coded in <a href="https://code.visualstudio.com/">Visual Studio Code</a> by myself.
-                Built with React and basic CSS, deployed with <a href="https://www.netlify.com/">Netlify.</a>
+              <p>Design heavily influenced by <a href="https://brittanychiang.com/">Brittany Chiang,</a> but coded entirely by me with <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
+                Built with React and CSS, deployed with <a href="https://www.netlify.com/">Netlify.</a>
               </p>
             </footer>
           </main>

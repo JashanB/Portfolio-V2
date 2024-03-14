@@ -117,7 +117,7 @@ function App() {
 
   useEffect(() => {
     //set about to active on page render 
-      setActiveSection('about');
+    setActiveSection('about');
   }, [])
 
   useEffect(() => {
@@ -139,11 +139,11 @@ function App() {
         }
 
         if (isVisible && distance < minDistance) {
-            minDistance = distance;
-            closestSection = section.id;
+          minDistance = distance;
+          closestSection = section.id;
         }
 
-    });
+      });
       if (!isNavigationClick) {
         handleSetActive(closestSection);
       }
@@ -198,37 +198,21 @@ function App() {
               </div>
               <div className='about'>
                 <p className='about-p-1'>What I love about Web Development and Software Engineering is the ability to create things. I've spent most of my life in fields
-                like Medicine and Medical Research, and never considered doing anything creative (mostly due to my lack of artistic ability). Then to my suprise I discovered
-                programming, where I can create things out of thin html! 
-
+                  like Medicine and Medical Research, and never considered doing anything creative (mostly due to lacking any artistic ability). Then I discovered
+                  programming, where I can create things out of thin HTML!
                 </p>
-                <p className='about-p-1'>My first real creation was a <a href='https://github.com/moa-novae/Bettr_Trip'>Travel Planner</a> made for my final project at 
-                <a href='https://www.lighthouselabs.ca/'> Lighthouse Labs </a>
-                where a user can create a travel itinerary and have Google recommendations, weather, and routes automatically displayed for their destinations. 
-                My first real programming job was at a <a href='https://www.carltonone.com/'>large international vendor</a> where I taught myself Python to design a revolutionary 
-                system for processing invoices which was over 1000x faster than their old system. 
-                After this I worked for an <a href='https://www.linkedin.com/company/twenty-billion-neurons-gmbh/'>AI startup company</a> where I collaborated
-                with a graphic design team to create a sales website for their data packages.</p>
-                <p className='about-p-2'>After recently graduating from the <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a>I've 
-                started creating again! I just made this new portfolio site, and also created a Spotify Profile App since I wanted to practice using OAuth. Thanks
-                for visiting my site, I hope you have an amazing day. 
-                
+                <p className='about-p-1'>My first real creation was a <a href='https://github.com/moa-novae/Bettr_Trip'>Travel Planner</a> made for my final project at
+                  <a href='https://www.lighthouselabs.ca/'> Lighthouse Labs </a>
+                  where a user can create a travel itinerary and have Google recommendations, weather, and routes automatically displayed for their destinations.
+                  My first real programming job was at a <a href='https://www.carltonone.com/'>large international vendor</a> where I taught myself Python to design a revolutionary
+                  system for processing invoices (which was over 1000x faster than their old system).
+                  After this I worked for an <a href='https://www.linkedin.com/company/twenty-billion-neurons-gmbh/'>AI startup company</a> where I collaborated
+                  with a graphic design team to create a sales website for their data packages.</p>
+                <p className='about-p-2'>After recently graduating from <a href='https://www.schulich.uwo.ca/index.html'> Schulich's School of Medicine </a>I've
+                  started creating again! I just made this new portfolio site, and also created a <a href="https://spotify-app-e9490d6b3f02.herokuapp.com/">Spotify Profile App </a>
+                  since I wanted to practice using OAuth. Thanks
+                  for visiting my site, I hope you have an amazing day.
                 </p>
-                  {/* <p className='about-p-1'>What I love about Web Development and Software Engineering is the ability to create things. I've spent most of my life in fields
-                like Medicine and Medical Research, and never considered doing anything creative (mostly due to my lack of artistic ability). Then to my suprise I discovered
-                programming where I can create things out of thin html! 
-                
-                and have alw
-                  My first real exposure to Web Development was through a bootcamp at <a href='https://www.lighthouselabs.ca/'>Lighthouse Labs</a> in 2019. I had just taken a break from Medical School at
-                  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and even though it was daunting to enter a completely new area, I had so much fun being creative and designing real-life things.
-                </p>
-                <p className='about-p-1'>
-                so 
-                  Along my coding journey I've had the privelage to work with a large international company where I revolutionized their automation system, and a startup where I was the lead developer of their new sales website.
-                  I've also had lots of fun participating in extracurricular coding such as hackathons where I made things like a <a href='https://github.com/JashanB/Mintbean-hackathon-number-guesser'>Chrome Extension</a>.
-                  Web development was a great fit for me but I decided to be responsible and finish my MD degree in 2023.</p>
-                <p className='about-p-2'>I recently graduated  <a href='https://www.schulich.uwo.ca/index.html'> Schulich School of Medicine</a> and I'm so excited to be
-                  back designing things I'm passionate about. I also like to keep busy with hiking, yoga, and beating my friends in video games.</p> */}
               </div>
             </Element>
             <Element name="experience" className='section' id="experience">
@@ -298,7 +282,7 @@ function App() {
               </div>
               <div>
                 <ul className='group-list'>
-                <li className='list-item' onMouseEnter={() => setObjHovered('project1')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project1')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigate("https://spotify-app-e9490d6b3f02.herokuapp.com/")}
                   >
                     <div className='list-item-grid'>
@@ -323,7 +307,7 @@ function App() {
                               </g>
                             </svg>
                           </span></a>
-                        <p>A fully deployed web app to check details about your spotify profile. View top artists and tracks based on a selectable 
+                        <p>A fully deployed web app to check details about your spotify profile. View top artists and tracks based on a selectable
                           range of time and sort tracks by unique features such as energy and danceability.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>

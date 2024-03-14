@@ -298,7 +298,7 @@ function App() {
                               </g>
                             </svg>
                           </span></a>
-                        <p>A web app to check details about your spotify profile</p>
+                        <p>A web app to check details about your spotify profile. View top artists and tracks based on a selectable range of time and sort tracks by unique features such as energy and danceability.</p>
                         <ul className='tech-stack-flex-box'>
                           <li className='tech-item'><div className="tech-item-div">React</div></li>
                           <li className='tech-item'><div className="tech-item-div">Express</div></li>

@@ -1,1 +1,1 @@
-This is my new portfolio site. I used a design by Brittany Chiang (https://brittanychiang.com/) and built the app with React and basic HTML. 
+This is my new portfolio site built with React and CSS. Design heavily influenced by Brittany Chiang but built entirely by me.

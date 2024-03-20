@@ -18,6 +18,7 @@ function App() {
     project2: false,
     project3: false,
     project4: false,
+    project5: false,
     resume: false,
     github: false
   })
@@ -44,6 +45,7 @@ function App() {
         project2: false,
         project3: false,
         project4: false,
+        project5: false,
         resume: false,
         github: false
       }

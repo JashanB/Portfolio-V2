@@ -338,7 +338,8 @@ function App() {
                         <a className="resume-link" href="https://mobile-first-consulting.netlify.app/" style={hoveredObj['project2'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
                           <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>Mobile First Site
                             <svg
-                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project2'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project1'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project2'] ? 
+                              hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project2'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
@@ -358,7 +359,7 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item' onMouseEnter={() => setObjHovered('project2')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project3')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigate("https://github.com/moa-novae/Bettr_Trip")}
                   >
                     <div className='list-item-grid'>
@@ -372,10 +373,11 @@ function App() {
                         maxHeight: '50%'
                       }}></div>
                       <div className='list-item-main'>
-                        <a className="resume-link" href="https://github.com/moa-novae/Bettr_Trip" style={hoveredObj['project2'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
-                          <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>Bettr Trip
+                        <a className="resume-link" href="https://github.com/moa-novae/Bettr_Trip" style={hoveredObj['project3'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hoveredObj['project3'] ? hoveredStyle.color : linkStyle.color}>Bettr Trip
                             <svg
-                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project2'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project1'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project3'] ? 
+                              hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project3'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
@@ -398,7 +400,7 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item' onMouseEnter={() => setObjHovered('project3')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project4')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigate("https://github.com/JashanB/WeatherApp")}
                   >
                     <div className='list-item-grid'>
@@ -412,10 +414,11 @@ function App() {
                         maxHeight: '50%'
                       }}></div>
                       <div className='list-item-main'>
-                        <a className="resume-link" href="https://github.com/JashanB/WeatherApp" style={hoveredObj['project3'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
-                          <span className='project-span' color={hoveredObj['project3'] ? hoveredStyle.color : linkStyle.color}>WeatherApp
+                        <a className="resume-link" href="https://github.com/JashanB/WeatherApp" style={hoveredObj['project4'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hoveredObj['project4'] ? hoveredStyle.color : linkStyle.color}>WeatherApp
                             <svg
-                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project3'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project2'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project4'] ? 
+                              hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project4'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >
@@ -437,7 +440,7 @@ function App() {
                       </div>
                     </div>
                   </li>
-                  <li className='list-item' onMouseEnter={() => setObjHovered('project4')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project5')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigate("https://github.com/JashanB/Newton")}
                   >
                     <div className='list-item-grid'>
@@ -451,10 +454,11 @@ function App() {
                         maxHeight: '50%'
                       }}></div>
                       <div className='list-item-main'>
-                        <a className="resume-link" href="https://github.com/JashanB/Newton" style={hoveredObj['project4'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
-                          <span className='project-span' color={hoveredObj['project4'] ? hoveredStyle.color : linkStyle.color}>Newton
+                        <a className="resume-link" href="https://github.com/JashanB/Newton" style={hoveredObj['project5'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hoveredObj['project5'] ? hoveredStyle.color : linkStyle.color}>Newton
                             <svg
-                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project4'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project3'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project5'] ? 
+                              hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project5'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                               <g id="SVGRepo_iconCarrier" >

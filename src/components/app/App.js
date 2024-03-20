@@ -10,6 +10,7 @@ import newton from "./Newton1.png";
 import weather from './weather.png';
 import bettr from './bettr.png';
 import spotify from './og.png';
+import mobile1 from './mobile1.png';
 
 function App() {
   const [smallScreen, setSmallScreen] = useState(false);
@@ -326,7 +327,7 @@ function App() {
                     <div className='list-item-grid'>
                       <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
                       <div className='img-container' style={{
-                        backgroundImage: `url(${bettr})`,
+                        backgroundImage: `url(${mobile1})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         width: '100%',

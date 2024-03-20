@@ -321,6 +321,43 @@ function App() {
                     </div>
                   </li>
                   <li className='list-item' onMouseEnter={() => setObjHovered('project2')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
+                    onClick={() => handleNavigate("https://mobile-first-consulting.netlify.app/")}
+                  >
+                    <div className='list-item-grid'>
+                      <div className={smallScreen ? "absolute-inset-experience-visible" : "absolute-inset-experience-hidden"}></div>
+                      <div className='img-container' style={{
+                        backgroundImage: `url(${bettr})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '100%',
+                        height: '100%',
+                        maxHeight: '50%'
+                      }}></div>
+                      <div className='list-item-main'>
+                        <a className="resume-link" href="https://mobile-first-consulting.netlify.app/" style={hoveredObj['project2'] ? { color: `${hoveredStyle.color}` } : { color: `${linkStyle.color}` }}>
+                          <span className='project-span' color={hoveredObj['project2'] ? hoveredStyle.color : linkStyle.color}>Mobile First Site
+                            <svg
+                              className="arrow-svg" width="16px" height="16px" viewBox="0 0 24 24" fill={hoveredObj['project2'] ? hoveredStyle.fill : linkStyle.fill} stroke={hoveredObj['project1'] ? hoveredStyle.stroke : linkStyle.stroke} xmlns="http://www.w3.org/2000/svg">
+                              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier" >
+                                <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                              </g>
+                            </svg>
+                          </span></a>
+                        <p>Single page React application for financial consulting services with a responsive design. Features Calendly API for booking appointments
+                          and Email Js. Deployed with Netlify.
+                        </p>
+                        <ul className='tech-stack-flex-box'>
+                          <li className='tech-item'><div className="tech-item-div">React</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Calendly</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Email Js</div></li>
+                          <li className='tech-item'><div className="tech-item-div">Netlify</div></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li className='list-item' onMouseEnter={() => setObjHovered('project2')} onMouseLeave={setOffObjHovered} style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigate("https://github.com/moa-novae/Bettr_Trip")}
                   >
                     <div className='list-item-grid'>

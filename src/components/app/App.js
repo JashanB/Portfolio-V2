@@ -626,6 +626,8 @@ function App() {
         <div className='bar4'></div>
         <div className='bar5'></div>
       </div>
+      <p>Sorry, this site is undergoing maintenance</p>
+      <p>If you have any questions, please contact brarjashan417@gmail.com</p>
     </div>
   )
 }

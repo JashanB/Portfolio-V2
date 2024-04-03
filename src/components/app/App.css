@@ -560,3 +560,21 @@ to {
   right: 0;
 }
 
+.bars div {
+  width: 10px;
+  height: 5px;
+  margin: 0 2px;
+  background-color: grey;
+  animation-name: dance;
+  animation-duration: 400ms;
+  animation-play-state: running;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bar1 {animation-delay: 250ms}
+.bar2 {animation-delay: 715ms}
+.bar3 {animation-delay: 475ms}
+.bar4 {animation-delay: 25ms}
+.bar5 {animation-delay: 190ms}

@@ -27,6 +27,7 @@ function App() {
   const [hoveredNav, setHoveredNav] = useState(null);
   const [activeSection, setActiveSection] = useState(null);
   const [isNavigationClick, setIsNavigationClick] = useState(false);
+  const [maintenance, setMaintenance] = useState(true);
 
   //***********FUNCTIONS***********
   //trigger css changes on hovering items
@@ -158,8 +159,8 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleSetActive, isNavigationClick]);
-
-  return (
+  
+  return !maintenance ? (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
       <div className='container'>
@@ -616,7 +617,11 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  ): (
+    <div>
+
+    </div>
+  )
 }
 
 export default App;

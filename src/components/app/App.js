@@ -159,7 +159,7 @@ function App() {
     };
   }, [handleSetActive, isNavigationClick]);
   
-  const maintenance = true;
+  const maintenance = false;
   return !maintenance ? (
     <div className="App">
       {/* root = _next, app = _variable, container = mx_auto, body = lg:flex*/}
